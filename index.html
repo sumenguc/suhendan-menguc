@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sühendan Mengüç</title>
+  <style>
+    :root {
+      --cream: #f2fbf7;      /* zemin — pastel deniz köpüğü */
+      --cream-2: #d3f3ea;    /* alternatif bölüm — açık aqua */
+      --terracotta: #ff5a5f; /* mercan — ana vurgu */
+      --brown: #0e9e8e;      /* turkuaz — başlıklar */
+      --ink: #0c3b34;        /* derin orman yeşili — metin */
+      --muted: #4a726a;
+      --serif: Georgia, "Times New Roman", "Playfair Display", serif;
+      --sans: -apple-system, "Segoe UI", Roboto, Helvetica, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      padding: 0.9rem 2rem;
+      background: rgba(250, 246, 240, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--cream-2);
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      letter-spacing: 0.5px;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.2rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--terracotta);
+    }
+
+    .langs {
+      display: flex;
+      gap: 0.35rem;
+      margin-left: 0.5rem;
+    }
+
+    .lang-btn {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid #d9ccbb;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--terracotta);
+      color: var(--terracotta);
+    }
+
+    .lang-btn.active {
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+      color: #fff;
+    }
+
+    /* ---------- Sections ---------- */
+    section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--brown);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-lead {
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      max-width: 640px;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      max-width: none;
+      min-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 6rem;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(255, 90, 95, 0.16), transparent 55%),
+        radial-gradient(circle at 78% 30%, rgba(255, 193, 61, 0.20), transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(14, 158, 142, 0.20), transparent 55%),
+        var(--cream);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 4.6rem);
+      color: var(--ink);
+      margin-bottom: 0.8rem;
+    }
+
+    .hero .roles {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+      color: var(--terracotta);
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      max-width: 560px;
+      color: var(--muted);
+      margin-bottom: 2.2rem;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--terracotta);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hero-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 26px rgba(181, 101, 29, 0.3);
+    }
+
+    /* ---------- About ---------- */
+    #hakkimda {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .portrait {
+      aspect-ratio: 3 / 4;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #6fe0cb, #0e9e8e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-style: italic;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 14px 30px rgba(12, 59, 52, 0.18);
+    }
+
+    .about-text h2 { margin-bottom: 1rem; }
+    .about-text p + p { margin-top: 1rem; }
+
+    /* ---------- Gallery ---------- */
+    .alt { background: var(--cream-2); max-width: none; }
+    .alt > .inner {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .art {
+      background: var(--cream);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(58, 46, 40, 0.08);
+      cursor: pointer;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .art:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(58, 46, 40, 0.16);
+    }
+
+    /* Yer tutucu görsel — gerçek resim için: arka planı
+       url('resimler/eser1.jpg') ile değiştirin ve metni silin. */
+    .art .thumb {
+      aspect-ratio: 4 / 3;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--serif);
+      font-size: 1.4rem;
+    }
+
+    .art .caption {
+      padding: 0.9rem 1rem 1.1rem;
+    }
+
+    .art .caption h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .art .caption span {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    /* ---------- Stories ---------- */
+    .stories { display: flex; flex-direction: column; gap: 1.2rem; }
+
+    .story {
+      background: var(--cream);
+      border: 1px solid var(--cream-2);
+      border-left: 4px solid var(--terracotta);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+
+    .story:hover { box-shadow: 0 10px 24px rgba(58, 46, 40, 0.1); }
+
+    .story h3 { font-size: 1.25rem; margin-bottom: 0.3rem; }
+    .story .excerpt { color: var(--muted); }
+
+    .story .full {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .story.open .full { max-height: 600px; }
+    .story .full p { margin-top: 1rem; }
+
+    .story .more {
+      display: inline-block;
+      margin-top: 0.8rem;
+      color: var(--terracotta);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* ---------- Travels ---------- */
+    .travels { display: flex; flex-direction: column; gap: 2.5rem; }
+
+    .travel {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .travel:nth-child(even) .photo { order: 2; }
+
+    .travel .photo {
+      aspect-ratio: 4 / 3;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--serif);
+      box-shadow: 0 12px 26px rgba(58, 46, 40, 0.14);
+    }
+
+    .travel .place {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+
+    .travel h3 { font-size: 1.5rem; margin: 0.2rem 0 0.6rem; }
+    .travel p { color: var(--muted); }
+
+    /* ---------- Thoughts / Philosophy ---------- */
+    .thoughts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .thought {
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 2rem 1.8rem;
+      box-shadow: 0 8px 20px rgba(58, 46, 40, 0.07);
+      position: relative;
+    }
+
+    .thought::before {
+      content: "\201C";
+      font-family: var(--serif);
+      font-size: 4rem;
+      color: rgba(255, 90, 95, 0.28);
+      position: absolute;
+      top: 0.2rem;
+      left: 1rem;
+      line-height: 1;
+    }
+
+    .thought p {
+      font-family: var(--serif);
+      font-size: 1.08rem;
+      font-style: italic;
+      color: var(--ink);
+      margin-top: 1rem;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: var(--ink);
+      color: #d9ccbb;
+      text-align: center;
+      padding: 2.5rem 2rem;
+    }
+
+    footer .fname {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+
+    footer .links {
+      margin: 0.8rem 0 1rem;
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    footer .links a {
+      color: #d9ccbb;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-bottom: 1px dotted #7a6a5c;
+    }
+
+    footer .links a:hover { color: #fff; }
+
+    footer small { color: #9a8a7c; font-size: 0.8rem; }
+
+    /* ---------- Lightbox ---------- */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(30, 24, 20, 0.9);
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .lightbox.show { display: flex; }
+
+    .lightbox .box {
+      max-width: 640px;
+      width: 100%;
+      background: var(--cream);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .lightbox .lb-img {
+      aspect-ratio: 4 / 3;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--serif);
+      font-size: 2rem;
+    }
+
+    .lightbox .lb-cap { padding: 1.2rem 1.5rem 1.6rem; }
+    .lightbox .lb-cap h3 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+    .lightbox .lb-cap span { color: var(--muted); }
+
+    .lightbox .close {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      color: #fff;
+      font-size: 2.2rem;
+      cursor: pointer;
+      line-height: 1;
+      background: none;
+      border: none;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 760px) {
+      section { padding: 3.5rem 1.4rem; }
+      #hakkimda { grid-template-columns: 1fr; }
+      .portrait { max-width: 260px; margin: 0 auto; }
+      .travel, .travel:nth-child(even) .photo { grid-template-columns: 1fr; order: 0; }
+      header { padding: 0.8rem 1.2rem; }
+      nav { gap: 0.2rem 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="brand">Sühendan Mengüç</span>
+    <nav>
+      <a href="#hakkimda" data-i18n="nav_about">Hakkımda</a>
+      <a href="#resimler" data-i18n="nav_art">Resimlerim</a>
+      <a href="#hikayeler" data-i18n="nav_stories">Hikayelerim</a>
+      <a href="#geziler" data-i18n="nav_travels">Gezilerim</a>
+      <a href="#dusunceler" data-i18n="nav_thoughts">Düşüncelerim</a>
+      <span class="langs">
+        <button class="lang-btn" onclick="setLang('tr')">TR</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('de')">DE</button>
+      </span>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Sühendan Mengüç</h1>
+    <div class="roles" data-i18n="hero_roles">Ressam · Yazar · Gezgin</div>
+    <p data-i18n="hero_desc">Renklerle, kelimelerle ve yollarla dokunmuş bir hayat. Resimlerimi, hikayelerimi, gezilerimi ve hayata dair düşüncelerimi burada paylaşıyorum.</p>
+    <a href="#resimler" class="hero-cta" data-i18n="hero_cta">Eserleri Keşfet</a>
+  </section>
+
+  <!-- Hakkımda -->
+  <section id="hakkimda">
+    <!-- Portre yer tutucu — gerçek fotoğraf için background: url('resimler/portre.jpg') -->
+    <div class="portrait" data-i18n="portrait_ph">Portre<br>fotoğrafı</div>
+    <div class="about-text">
+      <h2 class="section-title" data-i18n="about_title">Hakkımda</h2>
+      <p data-i18n="about_p1">Merhaba, ben Sühendan. Ömrümü resim yaparak, hikayeler yazarak ve dünyayı gezerek geçiriyorum. Bir tuvalin önünde ya da tanımadığım bir şehrin sokaklarında kendimi en canlı hissediyorum.</p>
+      <p data-i18n="about_p2">Bana göre sanat, yaşamı daha dikkatli görmenin bir yolu. Bu sayfa da o dikkatin küçük bir günlüğü: gördüklerim, hissettiklerim ve merak ettiğim sorular.</p>
+    </div>
+  </section>
+
+  <!-- Resimlerim -->
+  <section class="alt" style="padding:5rem 2rem;">
+    <div class="inner">
+      <h2 class="section-title" data-i18n="art_title">Resimlerim</h2>
+      <p class="section-lead" data-i18n="art_lead">Tuvale bıraktığım renkler ve anlar.</p>
+      <div class="gallery-grid">
+        <!-- Her eser: gerçek resim için .thumb style'ına background-image ekleyin. -->
+        <figure class="art" onclick="openLightbox(this)"
+          data-title-key="art1_t" data-medium-key="art1_m">
+          <div class="thumb" style="background:linear-gradient(135deg,#ff8a5b,#ff5a5f)">1</div>
+          <figcaption class="caption">
+            <h3 data-i18n="art1_t">Sabahın İlk Işığı</h3>
+            <span data-i18n="art1_m">Tuval üzerine yağlı boya</span>
+          </figcaption>
+        </figure>
+        <figure class="art" onclick="openLightbox(this)"
+          data-title-key="art2_t" data-medium-key="art2_m">
+          <div class="thumb" style="background:linear-gradient(135deg,#29c7d6,#0a7fa3)">2</div>
+          <figcaption class="caption">
+            <h3 data-i18n="art2_t">Deniz Kıyısında</h3>
+            <span data-i18n="art2_m">Suluboya</span>
+          </figcaption>
+        </figure>
+        <figure class="art" onclick="openLightbox(this)"
+          data-title-key="art3_t" data-medium-key="art3_m">
+          <div class="thumb" style="background:linear-gradient(135deg,#ffc13d,#ff8a3d)">3</div>
+          <figcaption class="caption">
+            <h3 data-i18n="art3_t">Sonbahar Bahçesi</h3>
+            <span data-i18n="art3_m">Akrilik</span>
+          </figcaption>
+        </figure>
+        <figure class="art" onclick="openLightbox(this)"
+          data-title-key="art4_t" data-medium-key="art4_m">
+          <div class="thumb" style="background:linear-gradient(135deg,#b15bd6,#6a2fb0)">4</div>
+          <figcaption class="caption">
+            <h3 data-i18n="art4_t">Gece ve Sessizlik</h3>
+            <span data-i18n="art4_m">Karışık teknik</span>
+          </figcaption>
+        </figure>
+        <figure class="art" onclick="openLightbox(this)"
+          data-title-key="art5_t" data-medium-key="art5_m">
+          <div class="thumb" style="background:linear-gradient(135deg,#7fd94a,#0e9e8e)">5</div>
+          <figcaption class="caption">
+            <h3 data-i18n="art5_t">Zeytin Ağaçları</h3>
+            <span data-i18n="art5_m">Tuval üzerine yağlı boya</span>
+          </figcaption>
+        </figure>
+        <figure class="art" onclick="openLightbox(this)"
+          data-title-key="art6_t" data-medium-key="art6_m">
+          <div class="thumb" style="background:linear-gradient(135deg,#ff5aa5,#c02f7a)">6</div>
+          <figcaption class="caption">
+            <h3 data-i18n="art6_t">Bir Portre Denemesi</h3>
+            <span data-i18n="art6_m">Kömür kalem</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hikayelerim -->
+  <section id="hikayeler">
+    <h2 class="section-title" data-i18n="stories_title">Hikayelerim</h2>
+    <p class="section-lead" data-i18n="stories_lead">Kelimelerle kurduğum küçük dünyalar.</p>
+    <div class="stories">
+      <article class="story" onclick="toggleStory(this)">
+        <h3 data-i18n="story1_t">Rüzgârın Getirdiği Mektup</h3>
+        <p class="excerpt" data-i18n="story1_e">Bir sonbahar sabahı, kapımın önünde adı olmayan bir mektup buldum…</p>
+        <div class="full"><p data-i18n="story1_f">Zarfın içinden çıkan tek bir cümle vardı: "Beklediğin şey aslında seni bekliyor." O gün, yıllardır ertelediğim yolculuğa çıkmaya karar verdim. Bazen bir cümle, bütün bir hayatı yerinden oynatmaya yeter.</p></div>
+        <span class="more" data-i18n="read_more">Devamını oku →</span>
+      </article>
+      <article class="story" onclick="toggleStory(this)">
+        <h3 data-i18n="story2_t">Şehrin En Sessiz Saati</h3>
+        <p class="excerpt" data-i18n="story2_e">Herkes uyurken uyanık kalanların bildiği bir sır vardır…</p>
+        <div class="full"><p data-i18n="story2_f">Gece yarısını geçen o saatlerde şehir, gündüz taşıdığı bütün maskeleri çıkarır. Sokak lambaları altında yürürken, kendimi ilk kez gerçekten yalnız değil, sadece sakin hissettim.</p></div>
+        <span class="more" data-i18n="read_more">Devamını oku →</span>
+      </article>
+      <article class="story" onclick="toggleStory(this)">
+        <h3 data-i18n="story3_t">İki Fincan Kahve</h3>
+        <p class="excerpt" data-i18n="story3_e">Yıllar sonra aynı masada, aynı iki fincan…</p>
+        <div class="full"><p data-i18n="story3_f">Konuşmadık. Konuşmaya gerek yoktu. Bazı dostluklar, aradan geçen zamanı hiç yaşanmamış gibi siler ve sizi tam bıraktığınız yerden alır. Kahveler soğudu ama biz ısındık.</p></div>
+        <span class="more" data-i18n="read_more">Devamını oku →</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Gezilerim -->
+  <section class="alt" style="padding:5rem 2rem;">
+    <div class="inner">
+      <h2 class="section-title" data-i18n="travels_title">Gezilerim</h2>
+      <p class="section-lead" data-i18n="travels_lead">Adımlarımın ve merakımın izinden.</p>
+      <div class="travels">
+        <div class="travel">
+          <!-- Gezi fotoğrafı için background: url('resimler/gezi1.jpg') -->
+          <div class="photo" style="background:linear-gradient(135deg,#12b3a6,#0a6f8a)">✈</div>
+          <div>
+            <div class="place" data-i18n="trip1_p">Kapadokya, Türkiye</div>
+            <h3 data-i18n="trip1_t">Peri Bacaları ve Balonlar</h3>
+            <p data-i18n="trip1_d">Şafak sökerken gökyüzünü dolduran onlarca balonu izlemek, hayatımda gördüğüm en dingin manzaralardan biriydi. Taşların binlerce yıllık sabrı insana ölçek kazandırıyor.</p>
+          </div>
+        </div>
+        <div class="travel">
+          <div class="photo" style="background:linear-gradient(135deg,#ffb03d,#ff6a3d)">☀</div>
+          <div>
+            <div class="place" data-i18n="trip2_p">Toskana, İtalya</div>
+            <h3 data-i18n="trip2_t">Tepelerdeki Sarı Işık</h3>
+            <p data-i18n="trip2_d">Zeytinlikler arasında kaybolduğum o öğleden sonra, neden bu kadar çok ressamın buraya geldiğini anladım. Işık burada boya gibi akıyor.</p>
+          </div>
+        </div>
+        <div class="travel">
+          <div class="photo" style="background:linear-gradient(135deg,#29c7d6,#0e9e8e)">⛰</div>
+          <div>
+            <div class="place" data-i18n="trip3_p">Lizbon, Portekiz</div>
+            <h3 data-i18n="trip3_t">Yokuşlar ve Tramvaylar</h3>
+            <p data-i18n="trip3_d">Sarı tramvayların çıngırağı, çinili duvarlar ve okyanusa bakan meydanlar… Lizbon, hüznü bile güzel yaşamayı bilen bir şehir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Düşüncelerim -->
+  <section id="dusunceler">
+    <h2 class="section-title" data-i18n="thoughts_title">Düşüncelerim</h2>
+    <p class="section-lead" data-i18n="thoughts_lead">Hayata dair, üzerine düşündüğüm sorular.</p>
+    <div class="thoughts">
+      <div class="thought"><p data-i18n="thought1">Belki de mutluluk bir varış noktası değil, dikkatimizi verdiğimiz her anın içinde saklı küçük bir alışkanlıktır.</p></div>
+      <div class="thought"><p data-i18n="thought2">Bir resmi bitiren ressam değil, ona bakan gözdür. Aynı şey hayat için de geçerli: anlamı biz veririz.</p></div>
+      <div class="thought"><p data-i18n="thought3">Yolculuk, gittiğimiz yeri değil, geri döndüğümüzde farklılaşan bakışımızı değiştirir.</p></div>
+      <div class="thought"><p data-i18n="thought4">Sessizlik boşluk değildir; çoğu zaman en gürültülü düşüncelerimizi duyabildiğimiz tek yerdir.</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="fname">Sühendan Mengüç</div>
+    <div data-i18n="footer_tag">Ressam · Yazar · Gezgin</div>
+    <div class="links">
+      <a href="#" data-i18n="footer_contact">İletişim</a>
+      <a href="#" data-i18n="footer_insta">Instagram</a>
+      <a href="#" data-i18n="footer_mail">E-posta</a>
+    </div>
+    <small data-i18n="footer_rights">© 2026 Sühendan Mengüç · Tüm hakları saklıdır.</small>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="close" onclick="closeLightbox(event)">&times;</button>
+    <div class="box">
+      <div class="lb-img" id="lbImg"></div>
+      <div class="lb-cap">
+        <h3 id="lbTitle"></h3>
+        <span id="lbMedium"></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const translations = {
+      tr: {
+        nav_about: "Hakkımda", nav_art: "Resimlerim", nav_stories: "Hikayelerim",
+        nav_travels: "Gezilerim", nav_thoughts: "Düşüncelerim",
+        hero_roles: "Ressam · Yazar · Gezgin",
+        hero_desc: "Renklerle, kelimelerle ve yollarla dokunmuş bir hayat. Resimlerimi, hikayelerimi, gezilerimi ve hayata dair düşüncelerimi burada paylaşıyorum.",
+        hero_cta: "Eserleri Keşfet",
+        portrait_ph: "Portre<br>fotoğrafı",
+        about_title: "Hakkımda",
+        about_p1: "Merhaba, ben Sühendan. Ömrümü resim yaparak, hikayeler yazarak ve dünyayı gezerek geçiriyorum. Bir tuvalin önünde ya da tanımadığım bir şehrin sokaklarında kendimi en canlı hissediyorum.",
+        about_p2: "Bana göre sanat, yaşamı daha dikkatli görmenin bir yolu. Bu sayfa da o dikkatin küçük bir günlüğü: gördüklerim, hissettiklerim ve merak ettiğim sorular.",
+        art_title: "Resimlerim", art_lead: "Tuvale bıraktığım renkler ve anlar.",
+        art1_t: "Sabahın İlk Işığı", art1_m: "Tuval üzerine yağlı boya",
+        art2_t: "Deniz Kıyısında", art2_m: "Suluboya",
+        art3_t: "Sonbahar Bahçesi", art3_m: "Akrilik",
+        art4_t: "Gece ve Sessizlik", art4_m: "Karışık teknik",
+        art5_t: "Zeytin Ağaçları", art5_m: "Tuval üzerine yağlı boya",
+        art6_t: "Bir Portre Denemesi", art6_m: "Kömür kalem",
+        stories_title: "Hikayelerim", stories_lead: "Kelimelerle kurduğum küçük dünyalar.",
+        read_more: "Devamını oku →",
+        story1_t: "Rüzgârın Getirdiği Mektup",
+        story1_e: "Bir sonbahar sabahı, kapımın önünde adı olmayan bir mektup buldum…",
+        story1_f: "Zarfın içinden çıkan tek bir cümle vardı: \"Beklediğin şey aslında seni bekliyor.\" O gün, yıllardır ertelediğim yolculuğa çıkmaya karar verdim. Bazen bir cümle, bütün bir hayatı yerinden oynatmaya yeter.",
+        story2_t: "Şehrin En Sessiz Saati",
+        story2_e: "Herkes uyurken uyanık kalanların bildiği bir sır vardır…",
+        story2_f: "Gece yarısını geçen o saatlerde şehir, gündüz taşıdığı bütün maskeleri çıkarır. Sokak lambaları altında yürürken, kendimi ilk kez gerçekten yalnız değil, sadece sakin hissettim.",
+        story3_t: "İki Fincan Kahve",
+        story3_e: "Yıllar sonra aynı masada, aynı iki fincan…",
+        story3_f: "Konuşmadık. Konuşmaya gerek yoktu. Bazı dostluklar, aradan geçen zamanı hiç yaşanmamış gibi siler ve sizi tam bıraktığınız yerden alır. Kahveler soğudu ama biz ısındık.",
+        travels_title: "Gezilerim", travels_lead: "Adımlarımın ve merakımın izinden.",
+        trip1_p: "Kapadokya, Türkiye", trip1_t: "Peri Bacaları ve Balonlar",
+        trip1_d: "Şafak sökerken gökyüzünü dolduran onlarca balonu izlemek, hayatımda gördüğüm en dingin manzaralardan biriydi. Taşların binlerce yıllık sabrı insana ölçek kazandırıyor.",
+        trip2_p: "Toskana, İtalya", trip2_t: "Tepelerdeki Sarı Işık",
+        trip2_d: "Zeytinlikler arasında kaybolduğum o öğleden sonra, neden bu kadar çok ressamın buraya geldiğini anladım. Işık burada boya gibi akıyor.",
+        trip3_p: "Lizbon, Portekiz", trip3_t: "Yokuşlar ve Tramvaylar",
+        trip3_d: "Sarı tramvayların çıngırağı, çinili duvarlar ve okyanusa bakan meydanlar… Lizbon, hüznü bile güzel yaşamayı bilen bir şehir.",
+        thoughts_title: "Düşüncelerim", thoughts_lead: "Hayata dair, üzerine düşündüğüm sorular.",
+        thought1: "Belki de mutluluk bir varış noktası değil, dikkatimizi verdiğimiz her anın içinde saklı küçük bir alışkanlıktır.",
+        thought2: "Bir resmi bitiren ressam değil, ona bakan gözdür. Aynı şey hayat için de geçerli: anlamı biz veririz.",
+        thought3: "Yolculuk, gittiğimiz yeri değil, geri döndüğümüzde farklılaşan bakışımızı değiştirir.",
+        thought4: "Sessizlik boşluk değildir; çoğu zaman en gürültülü düşüncelerimizi duyabildiğimiz tek yerdir.",
+        footer_tag: "Ressam · Yazar · Gezgin",
+        footer_contact: "İletişim", footer_insta: "Instagram", footer_mail: "E-posta",
+        footer_rights: "© 2026 Sühendan Mengüç · Tüm hakları saklıdır."
+      },
+      en: {
+        nav_about: "About", nav_art: "Paintings", nav_stories: "Stories",
+        nav_travels: "Travels", nav_thoughts: "Thoughts",
+        hero_roles: "Painter · Writer · Traveler",
+        hero_desc: "A life woven from colors, words and roads. Here I share my paintings, my stories, my travels and my thoughts on life.",
+        hero_cta: "Explore the Works",
+        portrait_ph: "Portrait<br>photo",
+        about_title: "About Me",
+        about_p1: "Hello, I'm Sühendan. I spend my life painting, writing stories and traveling the world. I feel most alive in front of a canvas or in the streets of a city I don't yet know.",
+        about_p2: "To me, art is a way of seeing life more attentively. This page is a small diary of that attention: what I see, what I feel and the questions I keep wondering about.",
+        art_title: "Paintings", art_lead: "The colors and moments I leave on the canvas.",
+        art1_t: "First Light of Morning", art1_m: "Oil on canvas",
+        art2_t: "By the Sea", art2_m: "Watercolor",
+        art3_t: "Autumn Garden", art3_m: "Acrylic",
+        art4_t: "Night and Silence", art4_m: "Mixed media",
+        art5_t: "Olive Trees", art5_m: "Oil on canvas",
+        art6_t: "A Portrait Study", art6_m: "Charcoal",
+        stories_title: "Stories", stories_lead: "Small worlds I build with words.",
+        read_more: "Read more →",
+        story1_t: "A Letter Brought by the Wind",
+        story1_e: "One autumn morning, I found a nameless letter at my door…",
+        story1_f: "Inside the envelope there was a single sentence: \"What you are waiting for is actually waiting for you.\" That day, I decided to set out on the journey I had postponed for years. Sometimes one sentence is enough to move an entire life.",
+        story2_t: "The Quietest Hour of the City",
+        story2_e: "There is a secret known to those who stay awake while everyone sleeps…",
+        story2_f: "In those hours past midnight, the city takes off all the masks it wears by day. Walking under the streetlights, for the first time I felt not truly alone, but simply calm.",
+        story3_t: "Two Cups of Coffee",
+        story3_e: "Years later, at the same table, the same two cups…",
+        story3_f: "We didn't speak. There was no need to. Some friendships erase the time in between as if it never happened, and pick you up right where you left off. The coffees went cold, but we grew warm.",
+        travels_title: "Travels", travels_lead: "Following my steps and my curiosity.",
+        trip1_p: "Cappadocia, Türkiye", trip1_t: "Fairy Chimneys and Balloons",
+        trip1_d: "Watching dozens of balloons fill the sky at dawn was one of the most serene sights I have ever seen. The thousand-year patience of the stones gives a person a sense of scale.",
+        trip2_p: "Tuscany, Italy", trip2_t: "The Yellow Light on the Hills",
+        trip2_d: "The afternoon I lost myself among the olive groves, I understood why so many painters came here. The light flows like paint.",
+        trip3_p: "Lisbon, Portugal", trip3_t: "Slopes and Trams",
+        trip3_d: "The bell of the yellow trams, tiled walls and squares facing the ocean… Lisbon is a city that knows how to live even its melancholy beautifully.",
+        thoughts_title: "Thoughts", thoughts_lead: "Questions about life that I keep pondering.",
+        thought1: "Perhaps happiness is not a destination, but a small habit hidden inside every moment we truly pay attention to.",
+        thought2: "It is not the painter who finishes a painting, but the eye that beholds it. The same is true of life: we are the ones who give it meaning.",
+        thought3: "Travel does not change the place we go to; it changes the way we look once we return.",
+        thought4: "Silence is not emptiness; it is often the only place where we can hear our loudest thoughts.",
+        footer_tag: "Painter · Writer · Traveler",
+        footer_contact: "Contact", footer_insta: "Instagram", footer_mail: "Email",
+        footer_rights: "© 2026 Sühendan Mengüç · All rights reserved."
+      },
+      de: {
+        nav_about: "Über mich", nav_art: "Bilder", nav_stories: "Geschichten",
+        nav_travels: "Reisen", nav_thoughts: "Gedanken",
+        hero_roles: "Malerin · Autorin · Reisende",
+        hero_desc: "Ein Leben, gewebt aus Farben, Worten und Wegen. Hier teile ich meine Bilder, meine Geschichten, meine Reisen und meine Gedanken über das Leben.",
+        hero_cta: "Werke entdecken",
+        portrait_ph: "Porträt-<br>foto",
+        about_title: "Über mich",
+        about_p1: "Hallo, ich bin Sühendan. Ich verbringe mein Leben mit Malen, dem Schreiben von Geschichten und dem Reisen durch die Welt. Am lebendigsten fühle ich mich vor einer Leinwand oder in den Straßen einer Stadt, die ich noch nicht kenne.",
+        about_p2: "Für mich ist Kunst eine Art, das Leben aufmerksamer zu sehen. Diese Seite ist ein kleines Tagebuch dieser Aufmerksamkeit: was ich sehe, was ich fühle und die Fragen, über die ich immer wieder nachdenke.",
+        art_title: "Bilder", art_lead: "Die Farben und Augenblicke, die ich auf der Leinwand hinterlasse.",
+        art1_t: "Erstes Morgenlicht", art1_m: "Öl auf Leinwand",
+        art2_t: "Am Meer", art2_m: "Aquarell",
+        art3_t: "Herbstgarten", art3_m: "Acryl",
+        art4_t: "Nacht und Stille", art4_m: "Mischtechnik",
+        art5_t: "Olivenbäume", art5_m: "Öl auf Leinwand",
+        art6_t: "Eine Porträtstudie", art6_m: "Kohlezeichnung",
+        stories_title: "Geschichten", stories_lead: "Kleine Welten, die ich mit Worten erschaffe.",
+        read_more: "Weiterlesen →",
+        story1_t: "Ein vom Wind gebrachter Brief",
+        story1_e: "An einem Herbstmorgen fand ich vor meiner Tür einen Brief ohne Namen…",
+        story1_f: "Im Umschlag stand nur ein einziger Satz: \"Worauf du wartest, wartet in Wahrheit auf dich.\" An jenem Tag beschloss ich, die Reise anzutreten, die ich jahrelang aufgeschoben hatte. Manchmal genügt ein einziger Satz, um ein ganzes Leben in Bewegung zu setzen.",
+        story2_t: "Die stillste Stunde der Stadt",
+        story2_e: "Es gibt ein Geheimnis, das nur jene kennen, die wach bleiben, während alle schlafen…",
+        story2_f: "In jenen Stunden nach Mitternacht legt die Stadt alle Masken ab, die sie tagsüber trägt. Als ich unter den Straßenlaternen ging, fühlte ich mich zum ersten Mal nicht wirklich allein, sondern einfach ruhig.",
+        story3_t: "Zwei Tassen Kaffee",
+        story3_e: "Jahre später, am selben Tisch, dieselben zwei Tassen…",
+        story3_f: "Wir sprachen nicht. Es war nicht nötig. Manche Freundschaften löschen die dazwischenliegende Zeit, als hätte es sie nie gegeben, und holen dich genau dort ab, wo du aufgehört hast. Der Kaffee wurde kalt, doch uns wurde warm.",
+        travels_title: "Reisen", travels_lead: "Den Spuren meiner Schritte und meiner Neugier folgend.",
+        trip1_p: "Kappadokien, Türkei", trip1_t: "Feenkamine und Ballons",
+        trip1_d: "Bei Sonnenaufgang Dutzende Ballons den Himmel füllen zu sehen, war einer der friedlichsten Anblicke meines Lebens. Die tausendjährige Geduld der Felsen verleiht dem Menschen ein Gefühl für Maßstab.",
+        trip2_p: "Toskana, Italien", trip2_t: "Das gelbe Licht auf den Hügeln",
+        trip2_d: "An dem Nachmittag, als ich mich zwischen den Olivenhainen verlor, verstand ich, warum so viele Maler hierherkamen. Das Licht fließt hier wie Farbe.",
+        trip3_p: "Lissabon, Portugal", trip3_t: "Steigungen und Straßenbahnen",
+        trip3_d: "Das Klingeln der gelben Straßenbahnen, gekachelte Wände und Plätze mit Blick aufs Meer… Lissabon ist eine Stadt, die selbst ihre Melancholie schön zu leben weiß.",
+        thoughts_title: "Gedanken", thoughts_lead: "Fragen über das Leben, über die ich immer wieder nachdenke.",
+        thought1: "Vielleicht ist Glück kein Ziel, sondern eine kleine Gewohnheit, verborgen in jedem Augenblick, dem wir wirklich Aufmerksamkeit schenken.",
+        thought2: "Nicht die Malerin vollendet ein Bild, sondern das Auge, das es betrachtet. Dasselbe gilt für das Leben: Wir sind es, die ihm Sinn geben.",
+        thought3: "Das Reisen verändert nicht den Ort, an den wir gehen, sondern den Blick, mit dem wir zurückkehren.",
+        thought4: "Stille ist keine Leere; oft ist sie der einzige Ort, an dem wir unsere lautesten Gedanken hören können.",
+        footer_tag: "Malerin · Autorin · Reisende",
+        footer_contact: "Kontakt", footer_insta: "Instagram", footer_mail: "E-Mail",
+        footer_rights: "© 2026 Sühendan Mengüç · Alle Rechte vorbehalten."
+      }
+    };
+
+    let currentLang = "tr";
+
+    function setLang(lang) {
+      currentLang = lang;
+      const t = translations[lang];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      document.documentElement.lang = lang;
+      document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.textContent.trim().toLowerCase() === lang);
+      });
+    }
+
+    function toggleStory(el) {
+      el.classList.toggle("open");
+    }
+
+    function openLightbox(fig) {
+      const t = translations[currentLang];
+      const thumb = fig.querySelector(".thumb");
+      const lbImg = document.getElementById("lbImg");
+      lbImg.style.background = thumb.style.background;
+      lbImg.textContent = thumb.textContent;
+      document.getElementById("lbTitle").textContent = t[fig.dataset.titleKey] || "";
+      document.getElementById("lbMedium").textContent = t[fig.dataset.mediumKey] || "";
+      document.getElementById("lightbox").classList.add("show");
+    }
+
+    function closeLightbox(e) {
+      // Sadece arka plana ya da kapatma butonuna tıklanınca kapansın
+      if (e.target.id === "lightbox" || e.target.classList.contains("close")) {
+        document.getElementById("lightbox").classList.remove("show");
+      }
+    }
+
+    setLang("tr");
+  </script>
+</body>
+</html>
