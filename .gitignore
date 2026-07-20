@@ -1,0 +1,15 @@
+# Kişisel veri dışa aktarımları - ASLA depoya girmemeli (depo herkese açık)
+facebook-*/
+instagram-*/
+google-takeout*/
+*-export/
+
+# İşletim sistemi / editör artıkları
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
