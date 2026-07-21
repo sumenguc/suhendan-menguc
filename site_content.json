@@ -1,0 +1,1841 @@
+{
+  "art": [
+    {
+      "file": "assets/art/01.webp"
+    },
+    {
+      "file": "assets/art/02.webp"
+    },
+    {
+      "file": "assets/art/03.webp"
+    },
+    {
+      "file": "assets/art/04.webp"
+    },
+    {
+      "file": "assets/art/05.webp"
+    },
+    {
+      "file": "assets/art/06.webp"
+    },
+    {
+      "file": "assets/art/07.webp"
+    },
+    {
+      "file": "assets/art/08.webp"
+    },
+    {
+      "file": "assets/art/09.webp"
+    },
+    {
+      "file": "assets/art/10.webp"
+    },
+    {
+      "file": "assets/art/11.webp"
+    },
+    {
+      "file": "assets/art/12.webp"
+    },
+    {
+      "file": "assets/art/13.webp"
+    },
+    {
+      "file": "assets/art/14.webp"
+    },
+    {
+      "file": "assets/art/15.webp"
+    },
+    {
+      "file": "assets/art/16.webp"
+    },
+    {
+      "file": "assets/art/17.webp"
+    },
+    {
+      "file": "assets/art/18.webp"
+    },
+    {
+      "file": "assets/art/19.webp"
+    }
+  ],
+  "portrait": "assets/profile/portrait.webp",
+  "travels": [
+    {
+      "slug": "Hawaii2014",
+      "title": {
+        "tr": "Hawaii, 2014",
+        "en": "Hawaii, 2014",
+        "de": "Hawaii, 2014"
+      },
+      "blurb": {
+        "tr": "Hawaii, 2014. 66 kareden bir seçki.",
+        "en": "Hawaii, 2014. A selection of 66 photos.",
+        "de": "Hawaii, 2014. Eine Auswahl von 66 Fotos."
+      },
+      "photos": [
+        "assets/travels/Hawaii2014/01.webp",
+        "assets/travels/Hawaii2014/02.webp",
+        "assets/travels/Hawaii2014/03.webp",
+        "assets/travels/Hawaii2014/04.webp",
+        "assets/travels/Hawaii2014/05.webp",
+        "assets/travels/Hawaii2014/06.webp",
+        "assets/travels/Hawaii2014/07.webp",
+        "assets/travels/Hawaii2014/08.webp",
+        "assets/travels/Hawaii2014/09.webp",
+        "assets/travels/Hawaii2014/10.webp",
+        "assets/travels/Hawaii2014/11.webp",
+        "assets/travels/Hawaii2014/12.webp",
+        "assets/travels/Hawaii2014/13.webp",
+        "assets/travels/Hawaii2014/14.webp",
+        "assets/travels/Hawaii2014/15.webp",
+        "assets/travels/Hawaii2014/16.webp",
+        "assets/travels/Hawaii2014/17.webp",
+        "assets/travels/Hawaii2014/18.webp",
+        "assets/travels/Hawaii2014/19.webp",
+        "assets/travels/Hawaii2014/20.webp",
+        "assets/travels/Hawaii2014/21.webp",
+        "assets/travels/Hawaii2014/22.webp",
+        "assets/travels/Hawaii2014/23.webp",
+        "assets/travels/Hawaii2014/24.webp",
+        "assets/travels/Hawaii2014/25.webp",
+        "assets/travels/Hawaii2014/26.webp",
+        "assets/travels/Hawaii2014/27.webp",
+        "assets/travels/Hawaii2014/28.webp",
+        "assets/travels/Hawaii2014/29.webp",
+        "assets/travels/Hawaii2014/30.webp",
+        "assets/travels/Hawaii2014/31.webp",
+        "assets/travels/Hawaii2014/32.webp",
+        "assets/travels/Hawaii2014/33.webp",
+        "assets/travels/Hawaii2014/34.webp",
+        "assets/travels/Hawaii2014/35.webp",
+        "assets/travels/Hawaii2014/36.webp",
+        "assets/travels/Hawaii2014/37.webp",
+        "assets/travels/Hawaii2014/38.webp",
+        "assets/travels/Hawaii2014/39.webp",
+        "assets/travels/Hawaii2014/40.webp",
+        "assets/travels/Hawaii2014/41.webp",
+        "assets/travels/Hawaii2014/42.webp",
+        "assets/travels/Hawaii2014/43.webp",
+        "assets/travels/Hawaii2014/44.webp",
+        "assets/travels/Hawaii2014/45.webp",
+        "assets/travels/Hawaii2014/46.webp",
+        "assets/travels/Hawaii2014/47.webp",
+        "assets/travels/Hawaii2014/48.webp",
+        "assets/travels/Hawaii2014/49.webp",
+        "assets/travels/Hawaii2014/50.webp",
+        "assets/travels/Hawaii2014/51.webp",
+        "assets/travels/Hawaii2014/52.webp",
+        "assets/travels/Hawaii2014/53.webp",
+        "assets/travels/Hawaii2014/54.webp",
+        "assets/travels/Hawaii2014/55.webp",
+        "assets/travels/Hawaii2014/56.webp",
+        "assets/travels/Hawaii2014/57.webp",
+        "assets/travels/Hawaii2014/58.webp",
+        "assets/travels/Hawaii2014/59.webp",
+        "assets/travels/Hawaii2014/60.webp",
+        "assets/travels/Hawaii2014/61.webp",
+        "assets/travels/Hawaii2014/62.webp",
+        "assets/travels/Hawaii2014/63.webp",
+        "assets/travels/Hawaii2014/64.webp",
+        "assets/travels/Hawaii2014/65.webp",
+        "assets/travels/Hawaii2014/66.webp"
+      ]
+    },
+    {
+      "slug": "Mallorca2008",
+      "title": {
+        "tr": "Mallorca, 2008",
+        "en": "Mallorca, 2008",
+        "de": "Mallorca, 2008"
+      },
+      "blurb": {
+        "tr": "Mallorca, 2008. 52 kareden bir seçki.",
+        "en": "Mallorca, 2008. A selection of 52 photos.",
+        "de": "Mallorca, 2008. Eine Auswahl von 52 Fotos."
+      },
+      "photos": [
+        "assets/travels/Mallorca2008/01.webp",
+        "assets/travels/Mallorca2008/02.webp",
+        "assets/travels/Mallorca2008/03.webp",
+        "assets/travels/Mallorca2008/04.webp",
+        "assets/travels/Mallorca2008/05.webp",
+        "assets/travels/Mallorca2008/06.webp",
+        "assets/travels/Mallorca2008/07.webp",
+        "assets/travels/Mallorca2008/08.webp",
+        "assets/travels/Mallorca2008/09.webp",
+        "assets/travels/Mallorca2008/10.webp",
+        "assets/travels/Mallorca2008/11.webp",
+        "assets/travels/Mallorca2008/12.webp",
+        "assets/travels/Mallorca2008/13.webp",
+        "assets/travels/Mallorca2008/14.webp",
+        "assets/travels/Mallorca2008/15.webp",
+        "assets/travels/Mallorca2008/16.webp",
+        "assets/travels/Mallorca2008/17.webp",
+        "assets/travels/Mallorca2008/18.webp",
+        "assets/travels/Mallorca2008/19.webp",
+        "assets/travels/Mallorca2008/20.webp",
+        "assets/travels/Mallorca2008/21.webp",
+        "assets/travels/Mallorca2008/22.webp",
+        "assets/travels/Mallorca2008/23.webp",
+        "assets/travels/Mallorca2008/24.webp",
+        "assets/travels/Mallorca2008/25.webp",
+        "assets/travels/Mallorca2008/26.webp",
+        "assets/travels/Mallorca2008/27.webp",
+        "assets/travels/Mallorca2008/28.webp",
+        "assets/travels/Mallorca2008/29.webp",
+        "assets/travels/Mallorca2008/30.webp",
+        "assets/travels/Mallorca2008/31.webp",
+        "assets/travels/Mallorca2008/32.webp",
+        "assets/travels/Mallorca2008/33.webp",
+        "assets/travels/Mallorca2008/34.webp",
+        "assets/travels/Mallorca2008/35.webp",
+        "assets/travels/Mallorca2008/36.webp",
+        "assets/travels/Mallorca2008/37.webp",
+        "assets/travels/Mallorca2008/38.webp",
+        "assets/travels/Mallorca2008/39.webp",
+        "assets/travels/Mallorca2008/40.webp",
+        "assets/travels/Mallorca2008/41.webp",
+        "assets/travels/Mallorca2008/42.webp",
+        "assets/travels/Mallorca2008/43.webp",
+        "assets/travels/Mallorca2008/44.webp",
+        "assets/travels/Mallorca2008/45.webp",
+        "assets/travels/Mallorca2008/46.webp",
+        "assets/travels/Mallorca2008/47.webp",
+        "assets/travels/Mallorca2008/48.webp",
+        "assets/travels/Mallorca2008/49.webp",
+        "assets/travels/Mallorca2008/50.webp",
+        "assets/travels/Mallorca2008/51.webp",
+        "assets/travels/Mallorca2008/52.webp"
+      ]
+    },
+    {
+      "slug": "BodenseeEyll20",
+      "title": {
+        "tr": "Bodensee, Eylül 2010",
+        "en": "Lake Constance, September 2010",
+        "de": "Bodensee, September 2010"
+      },
+      "blurb": {
+        "tr": "Bodensee, Eylül 2010. 32 kareden bir seçki.",
+        "en": "Lake Constance, September 2010. A selection of 32 photos.",
+        "de": "Bodensee, September 2010. Eine Auswahl von 32 Fotos."
+      },
+      "photos": [
+        "assets/travels/BodenseeEyll20/01.webp",
+        "assets/travels/BodenseeEyll20/02.webp",
+        "assets/travels/BodenseeEyll20/03.webp",
+        "assets/travels/BodenseeEyll20/04.webp",
+        "assets/travels/BodenseeEyll20/05.webp",
+        "assets/travels/BodenseeEyll20/06.webp",
+        "assets/travels/BodenseeEyll20/07.webp",
+        "assets/travels/BodenseeEyll20/08.webp",
+        "assets/travels/BodenseeEyll20/09.webp",
+        "assets/travels/BodenseeEyll20/10.webp",
+        "assets/travels/BodenseeEyll20/11.webp",
+        "assets/travels/BodenseeEyll20/12.webp",
+        "assets/travels/BodenseeEyll20/13.webp",
+        "assets/travels/BodenseeEyll20/14.webp",
+        "assets/travels/BodenseeEyll20/15.webp",
+        "assets/travels/BodenseeEyll20/16.webp",
+        "assets/travels/BodenseeEyll20/17.webp",
+        "assets/travels/BodenseeEyll20/18.webp",
+        "assets/travels/BodenseeEyll20/19.webp",
+        "assets/travels/BodenseeEyll20/20.webp",
+        "assets/travels/BodenseeEyll20/21.webp",
+        "assets/travels/BodenseeEyll20/22.webp",
+        "assets/travels/BodenseeEyll20/23.webp",
+        "assets/travels/BodenseeEyll20/24.webp",
+        "assets/travels/BodenseeEyll20/25.webp",
+        "assets/travels/BodenseeEyll20/26.webp",
+        "assets/travels/BodenseeEyll20/27.webp",
+        "assets/travels/BodenseeEyll20/28.webp",
+        "assets/travels/BodenseeEyll20/29.webp",
+        "assets/travels/BodenseeEyll20/30.webp",
+        "assets/travels/BodenseeEyll20/31.webp",
+        "assets/travels/BodenseeEyll20/32.webp"
+      ]
+    },
+    {
+      "slug": "Prag2009",
+      "title": {
+        "tr": "Prag, 2009",
+        "en": "Prague, 2009",
+        "de": "Prag, 2009"
+      },
+      "blurb": {
+        "tr": "Prag, 2009. 38 kareden bir seçki.",
+        "en": "Prague, 2009. A selection of 38 photos.",
+        "de": "Prag, 2009. Eine Auswahl von 38 Fotos."
+      },
+      "photos": [
+        "assets/travels/Prag2009/01.webp",
+        "assets/travels/Prag2009/02.webp",
+        "assets/travels/Prag2009/03.webp",
+        "assets/travels/Prag2009/04.webp",
+        "assets/travels/Prag2009/05.webp",
+        "assets/travels/Prag2009/06.webp",
+        "assets/travels/Prag2009/07.webp",
+        "assets/travels/Prag2009/08.webp",
+        "assets/travels/Prag2009/09.webp",
+        "assets/travels/Prag2009/10.webp",
+        "assets/travels/Prag2009/11.webp",
+        "assets/travels/Prag2009/12.webp",
+        "assets/travels/Prag2009/13.webp",
+        "assets/travels/Prag2009/14.webp",
+        "assets/travels/Prag2009/15.webp",
+        "assets/travels/Prag2009/16.webp",
+        "assets/travels/Prag2009/17.webp",
+        "assets/travels/Prag2009/18.webp",
+        "assets/travels/Prag2009/19.webp",
+        "assets/travels/Prag2009/20.webp",
+        "assets/travels/Prag2009/21.webp",
+        "assets/travels/Prag2009/22.webp",
+        "assets/travels/Prag2009/23.webp",
+        "assets/travels/Prag2009/24.webp",
+        "assets/travels/Prag2009/25.webp",
+        "assets/travels/Prag2009/26.webp",
+        "assets/travels/Prag2009/27.webp",
+        "assets/travels/Prag2009/28.webp",
+        "assets/travels/Prag2009/29.webp",
+        "assets/travels/Prag2009/30.webp",
+        "assets/travels/Prag2009/31.webp",
+        "assets/travels/Prag2009/32.webp",
+        "assets/travels/Prag2009/33.webp",
+        "assets/travels/Prag2009/34.webp",
+        "assets/travels/Prag2009/35.webp",
+        "assets/travels/Prag2009/36.webp",
+        "assets/travels/Prag2009/37.webp",
+        "assets/travels/Prag2009/38.webp"
+      ]
+    },
+    {
+      "slug": "KronolojikGnde",
+      "title": {
+        "tr": "Anılarımdan",
+        "en": "From My Memories",
+        "de": "Aus meinen Erinnerungen"
+      },
+      "blurb": {
+        "tr": "Anılarımdan. 37 kareden bir seçki.",
+        "en": "From My Memories. A selection of 37 photos.",
+        "de": "Aus meinen Erinnerungen. Eine Auswahl von 37 Fotos."
+      },
+      "photos": [
+        "assets/travels/KronolojikGnde/01.webp",
+        "assets/travels/KronolojikGnde/02.webp",
+        "assets/travels/KronolojikGnde/03.webp",
+        "assets/travels/KronolojikGnde/04.webp",
+        "assets/travels/KronolojikGnde/05.webp",
+        "assets/travels/KronolojikGnde/06.webp",
+        "assets/travels/KronolojikGnde/07.webp",
+        "assets/travels/KronolojikGnde/08.webp",
+        "assets/travels/KronolojikGnde/09.webp",
+        "assets/travels/KronolojikGnde/10.webp",
+        "assets/travels/KronolojikGnde/11.webp",
+        "assets/travels/KronolojikGnde/12.webp",
+        "assets/travels/KronolojikGnde/13.webp",
+        "assets/travels/KronolojikGnde/14.webp",
+        "assets/travels/KronolojikGnde/15.webp",
+        "assets/travels/KronolojikGnde/16.webp",
+        "assets/travels/KronolojikGnde/17.webp",
+        "assets/travels/KronolojikGnde/18.webp",
+        "assets/travels/KronolojikGnde/19.webp",
+        "assets/travels/KronolojikGnde/20.webp",
+        "assets/travels/KronolojikGnde/21.webp",
+        "assets/travels/KronolojikGnde/22.webp",
+        "assets/travels/KronolojikGnde/23.webp",
+        "assets/travels/KronolojikGnde/24.webp",
+        "assets/travels/KronolojikGnde/25.webp",
+        "assets/travels/KronolojikGnde/26.webp",
+        "assets/travels/KronolojikGnde/27.webp",
+        "assets/travels/KronolojikGnde/28.webp",
+        "assets/travels/KronolojikGnde/29.webp",
+        "assets/travels/KronolojikGnde/30.webp",
+        "assets/travels/KronolojikGnde/31.webp",
+        "assets/travels/KronolojikGnde/32.webp",
+        "assets/travels/KronolojikGnde/33.webp",
+        "assets/travels/KronolojikGnde/34.webp",
+        "assets/travels/KronolojikGnde/35.webp",
+        "assets/travels/KronolojikGnde/36.webp",
+        "assets/travels/KronolojikGnde/37.webp"
+      ]
+    },
+    {
+      "slug": "Fotoraflar",
+      "title": {
+        "tr": "Fotoğraflar",
+        "en": "Photographs",
+        "de": "Fotografien"
+      },
+      "blurb": {
+        "tr": "Fotoğraflar. 36 kareden bir seçki.",
+        "en": "Photographs. A selection of 36 photos.",
+        "de": "Fotografien. Eine Auswahl von 36 Fotos."
+      },
+      "photos": [
+        "assets/travels/Fotoraflar/01.webp",
+        "assets/travels/Fotoraflar/02.webp",
+        "assets/travels/Fotoraflar/03.webp",
+        "assets/travels/Fotoraflar/04.webp",
+        "assets/travels/Fotoraflar/05.webp",
+        "assets/travels/Fotoraflar/06.webp",
+        "assets/travels/Fotoraflar/07.webp",
+        "assets/travels/Fotoraflar/08.webp",
+        "assets/travels/Fotoraflar/09.webp",
+        "assets/travels/Fotoraflar/10.webp",
+        "assets/travels/Fotoraflar/11.webp",
+        "assets/travels/Fotoraflar/12.webp",
+        "assets/travels/Fotoraflar/13.webp",
+        "assets/travels/Fotoraflar/14.webp",
+        "assets/travels/Fotoraflar/15.webp",
+        "assets/travels/Fotoraflar/16.webp",
+        "assets/travels/Fotoraflar/17.webp",
+        "assets/travels/Fotoraflar/18.webp",
+        "assets/travels/Fotoraflar/19.webp",
+        "assets/travels/Fotoraflar/20.webp",
+        "assets/travels/Fotoraflar/21.webp",
+        "assets/travels/Fotoraflar/22.webp",
+        "assets/travels/Fotoraflar/23.webp",
+        "assets/travels/Fotoraflar/24.webp",
+        "assets/travels/Fotoraflar/25.webp",
+        "assets/travels/Fotoraflar/26.webp",
+        "assets/travels/Fotoraflar/27.webp",
+        "assets/travels/Fotoraflar/28.webp",
+        "assets/travels/Fotoraflar/29.webp",
+        "assets/travels/Fotoraflar/30.webp",
+        "assets/travels/Fotoraflar/31.webp",
+        "assets/travels/Fotoraflar/32.webp",
+        "assets/travels/Fotoraflar/33.webp",
+        "assets/travels/Fotoraflar/34.webp",
+        "assets/travels/Fotoraflar/35.webp",
+        "assets/travels/Fotoraflar/36.webp"
+      ]
+    },
+    {
+      "slug": "RotterdamMays2",
+      "title": {
+        "tr": "Rotterdam, Mayıs 2011",
+        "en": "Rotterdam, May 2011",
+        "de": "Rotterdam, Mai 2011"
+      },
+      "blurb": {
+        "tr": "Rotterdam, Mayıs 2011. 27 kareden bir seçki.",
+        "en": "Rotterdam, May 2011. A selection of 27 photos.",
+        "de": "Rotterdam, Mai 2011. Eine Auswahl von 27 Fotos."
+      },
+      "photos": [
+        "assets/travels/RotterdamMays2/01.webp",
+        "assets/travels/RotterdamMays2/02.webp",
+        "assets/travels/RotterdamMays2/03.webp",
+        "assets/travels/RotterdamMays2/04.webp",
+        "assets/travels/RotterdamMays2/05.webp",
+        "assets/travels/RotterdamMays2/06.webp",
+        "assets/travels/RotterdamMays2/07.webp",
+        "assets/travels/RotterdamMays2/08.webp",
+        "assets/travels/RotterdamMays2/09.webp",
+        "assets/travels/RotterdamMays2/10.webp",
+        "assets/travels/RotterdamMays2/11.webp",
+        "assets/travels/RotterdamMays2/12.webp",
+        "assets/travels/RotterdamMays2/13.webp",
+        "assets/travels/RotterdamMays2/14.webp",
+        "assets/travels/RotterdamMays2/15.webp",
+        "assets/travels/RotterdamMays2/16.webp",
+        "assets/travels/RotterdamMays2/17.webp",
+        "assets/travels/RotterdamMays2/18.webp",
+        "assets/travels/RotterdamMays2/19.webp",
+        "assets/travels/RotterdamMays2/20.webp",
+        "assets/travels/RotterdamMays2/21.webp",
+        "assets/travels/RotterdamMays2/22.webp",
+        "assets/travels/RotterdamMays2/23.webp",
+        "assets/travels/RotterdamMays2/24.webp",
+        "assets/travels/RotterdamMays2/25.webp",
+        "assets/travels/RotterdamMays2/26.webp",
+        "assets/travels/RotterdamMays2/27.webp"
+      ]
+    },
+    {
+      "slug": "IJsselmeerAust",
+      "title": {
+        "tr": "IJsselmeer, Ağustos 2011",
+        "en": "IJsselmeer, August 2011",
+        "de": "IJsselmeer, August 2011"
+      },
+      "blurb": {
+        "tr": "IJsselmeer, Ağustos 2011. 24 kareden bir seçki.",
+        "en": "IJsselmeer, August 2011. A selection of 24 photos.",
+        "de": "IJsselmeer, August 2011. Eine Auswahl von 24 Fotos."
+      },
+      "photos": [
+        "assets/travels/IJsselmeerAust/01.webp",
+        "assets/travels/IJsselmeerAust/02.webp",
+        "assets/travels/IJsselmeerAust/03.webp",
+        "assets/travels/IJsselmeerAust/04.webp",
+        "assets/travels/IJsselmeerAust/05.webp",
+        "assets/travels/IJsselmeerAust/06.webp",
+        "assets/travels/IJsselmeerAust/07.webp",
+        "assets/travels/IJsselmeerAust/08.webp",
+        "assets/travels/IJsselmeerAust/09.webp",
+        "assets/travels/IJsselmeerAust/10.webp",
+        "assets/travels/IJsselmeerAust/11.webp",
+        "assets/travels/IJsselmeerAust/12.webp",
+        "assets/travels/IJsselmeerAust/13.webp",
+        "assets/travels/IJsselmeerAust/14.webp",
+        "assets/travels/IJsselmeerAust/15.webp",
+        "assets/travels/IJsselmeerAust/16.webp",
+        "assets/travels/IJsselmeerAust/17.webp",
+        "assets/travels/IJsselmeerAust/18.webp",
+        "assets/travels/IJsselmeerAust/19.webp",
+        "assets/travels/IJsselmeerAust/20.webp",
+        "assets/travels/IJsselmeerAust/21.webp",
+        "assets/travels/IJsselmeerAust/22.webp",
+        "assets/travels/IJsselmeerAust/23.webp",
+        "assets/travels/IJsselmeerAust/24.webp"
+      ]
+    },
+    {
+      "slug": "KellerwegfestA",
+      "title": {
+        "tr": "Kellerwegfest, Ağustos 2011",
+        "en": "Kellerwegfest, August 2011",
+        "de": "Kellerwegfest, August 2011"
+      },
+      "blurb": {
+        "tr": "Kellerwegfest, Ağustos 2011. 24 kareden bir seçki.",
+        "en": "Kellerwegfest, August 2011. A selection of 24 photos.",
+        "de": "Kellerwegfest, August 2011. Eine Auswahl von 24 Fotos."
+      },
+      "photos": [
+        "assets/travels/KellerwegfestA/01.webp",
+        "assets/travels/KellerwegfestA/02.webp",
+        "assets/travels/KellerwegfestA/03.webp",
+        "assets/travels/KellerwegfestA/04.webp",
+        "assets/travels/KellerwegfestA/05.webp",
+        "assets/travels/KellerwegfestA/06.webp",
+        "assets/travels/KellerwegfestA/07.webp",
+        "assets/travels/KellerwegfestA/08.webp",
+        "assets/travels/KellerwegfestA/09.webp",
+        "assets/travels/KellerwegfestA/10.webp",
+        "assets/travels/KellerwegfestA/11.webp",
+        "assets/travels/KellerwegfestA/12.webp",
+        "assets/travels/KellerwegfestA/13.webp",
+        "assets/travels/KellerwegfestA/14.webp",
+        "assets/travels/KellerwegfestA/15.webp",
+        "assets/travels/KellerwegfestA/16.webp",
+        "assets/travels/KellerwegfestA/17.webp",
+        "assets/travels/KellerwegfestA/18.webp",
+        "assets/travels/KellerwegfestA/19.webp",
+        "assets/travels/KellerwegfestA/20.webp",
+        "assets/travels/KellerwegfestA/21.webp",
+        "assets/travels/KellerwegfestA/22.webp",
+        "assets/travels/KellerwegfestA/23.webp",
+        "assets/travels/KellerwegfestA/24.webp"
+      ]
+    },
+    {
+      "slug": "NewYork2014",
+      "title": {
+        "tr": "New York, 2014",
+        "en": "New York, 2014",
+        "de": "New York, 2014"
+      },
+      "blurb": {
+        "tr": "New York, 2014. 22 kareden bir seçki.",
+        "en": "New York, 2014. A selection of 22 photos.",
+        "de": "New York, 2014. Eine Auswahl von 22 Fotos."
+      },
+      "photos": [
+        "assets/travels/NewYork2014/01.webp",
+        "assets/travels/NewYork2014/02.webp",
+        "assets/travels/NewYork2014/03.webp",
+        "assets/travels/NewYork2014/04.webp",
+        "assets/travels/NewYork2014/05.webp",
+        "assets/travels/NewYork2014/06.webp",
+        "assets/travels/NewYork2014/07.webp",
+        "assets/travels/NewYork2014/08.webp",
+        "assets/travels/NewYork2014/09.webp",
+        "assets/travels/NewYork2014/10.webp",
+        "assets/travels/NewYork2014/11.webp",
+        "assets/travels/NewYork2014/12.webp",
+        "assets/travels/NewYork2014/13.webp",
+        "assets/travels/NewYork2014/14.webp",
+        "assets/travels/NewYork2014/15.webp",
+        "assets/travels/NewYork2014/16.webp",
+        "assets/travels/NewYork2014/17.webp",
+        "assets/travels/NewYork2014/18.webp",
+        "assets/travels/NewYork2014/19.webp",
+        "assets/travels/NewYork2014/20.webp",
+        "assets/travels/NewYork2014/21.webp",
+        "assets/travels/NewYork2014/22.webp"
+      ]
+    },
+    {
+      "slug": "AkkrumYelkenHa",
+      "title": {
+        "tr": "Akkrum Yelken Haftasonu, 2008",
+        "en": "Akkrum Sailing Weekend, 2008",
+        "de": "Akkrum Segelwochenende, 2008"
+      },
+      "blurb": {
+        "tr": "Akkrum Yelken Haftasonu, 2008. 20 kareden bir seçki.",
+        "en": "Akkrum Sailing Weekend, 2008. A selection of 20 photos.",
+        "de": "Akkrum Segelwochenende, 2008. Eine Auswahl von 20 Fotos."
+      },
+      "photos": [
+        "assets/travels/AkkrumYelkenHa/01.webp",
+        "assets/travels/AkkrumYelkenHa/02.webp",
+        "assets/travels/AkkrumYelkenHa/03.webp",
+        "assets/travels/AkkrumYelkenHa/04.webp",
+        "assets/travels/AkkrumYelkenHa/05.webp",
+        "assets/travels/AkkrumYelkenHa/06.webp",
+        "assets/travels/AkkrumYelkenHa/07.webp",
+        "assets/travels/AkkrumYelkenHa/08.webp",
+        "assets/travels/AkkrumYelkenHa/09.webp",
+        "assets/travels/AkkrumYelkenHa/10.webp",
+        "assets/travels/AkkrumYelkenHa/11.webp",
+        "assets/travels/AkkrumYelkenHa/12.webp",
+        "assets/travels/AkkrumYelkenHa/13.webp",
+        "assets/travels/AkkrumYelkenHa/14.webp",
+        "assets/travels/AkkrumYelkenHa/15.webp",
+        "assets/travels/AkkrumYelkenHa/16.webp",
+        "assets/travels/AkkrumYelkenHa/17.webp",
+        "assets/travels/AkkrumYelkenHa/18.webp",
+        "assets/travels/AkkrumYelkenHa/19.webp",
+        "assets/travels/AkkrumYelkenHa/20.webp"
+      ]
+    },
+    {
+      "slug": "EveElaubat2011",
+      "title": {
+        "tr": "Eve & Ela, Şubat 2011",
+        "en": "Eve & Ela, February 2011",
+        "de": "Eve & Ela, Februar 2011"
+      },
+      "blurb": {
+        "tr": "Eve & Ela, Şubat 2011. 19 kareden bir seçki.",
+        "en": "Eve & Ela, February 2011. A selection of 19 photos.",
+        "de": "Eve & Ela, Februar 2011. Eine Auswahl von 19 Fotos."
+      },
+      "photos": [
+        "assets/travels/EveElaubat2011/01.webp",
+        "assets/travels/EveElaubat2011/02.webp",
+        "assets/travels/EveElaubat2011/03.webp",
+        "assets/travels/EveElaubat2011/04.webp",
+        "assets/travels/EveElaubat2011/05.webp",
+        "assets/travels/EveElaubat2011/06.webp",
+        "assets/travels/EveElaubat2011/07.webp",
+        "assets/travels/EveElaubat2011/08.webp",
+        "assets/travels/EveElaubat2011/09.webp",
+        "assets/travels/EveElaubat2011/10.webp",
+        "assets/travels/EveElaubat2011/11.webp",
+        "assets/travels/EveElaubat2011/12.webp",
+        "assets/travels/EveElaubat2011/13.webp",
+        "assets/travels/EveElaubat2011/14.webp",
+        "assets/travels/EveElaubat2011/15.webp",
+        "assets/travels/EveElaubat2011/16.webp",
+        "assets/travels/EveElaubat2011/17.webp",
+        "assets/travels/EveElaubat2011/18.webp",
+        "assets/travels/EveElaubat2011/19.webp"
+      ]
+    },
+    {
+      "slug": "SanFrancisco20",
+      "title": {
+        "tr": "San Francisco, 2014",
+        "en": "San Francisco, 2014",
+        "de": "San Francisco, 2014"
+      },
+      "blurb": {
+        "tr": "San Francisco, 2014. 14 kareden bir seçki.",
+        "en": "San Francisco, 2014. A selection of 14 photos.",
+        "de": "San Francisco, 2014. Eine Auswahl von 14 Fotos."
+      },
+      "photos": [
+        "assets/travels/SanFrancisco20/01.webp",
+        "assets/travels/SanFrancisco20/02.webp",
+        "assets/travels/SanFrancisco20/03.webp",
+        "assets/travels/SanFrancisco20/04.webp",
+        "assets/travels/SanFrancisco20/05.webp",
+        "assets/travels/SanFrancisco20/06.webp",
+        "assets/travels/SanFrancisco20/07.webp",
+        "assets/travels/SanFrancisco20/08.webp",
+        "assets/travels/SanFrancisco20/09.webp",
+        "assets/travels/SanFrancisco20/10.webp",
+        "assets/travels/SanFrancisco20/11.webp",
+        "assets/travels/SanFrancisco20/12.webp",
+        "assets/travels/SanFrancisco20/13.webp",
+        "assets/travels/SanFrancisco20/14.webp"
+      ]
+    },
+    {
+      "slug": "ShendanMeng",
+      "title": {
+        "tr": "Kendi Anılarım",
+        "en": "My Own Memories",
+        "de": "Meine eigenen Erinnerungen"
+      },
+      "blurb": {
+        "tr": "Kendi Anılarım. 13 kareden bir seçki.",
+        "en": "My Own Memories. A selection of 13 photos.",
+        "de": "Meine eigenen Erinnerungen. Eine Auswahl von 13 Fotos."
+      },
+      "photos": [
+        "assets/travels/ShendanMeng/01.webp",
+        "assets/travels/ShendanMeng/02.webp",
+        "assets/travels/ShendanMeng/03.webp",
+        "assets/travels/ShendanMeng/04.webp",
+        "assets/travels/ShendanMeng/05.webp",
+        "assets/travels/ShendanMeng/06.webp",
+        "assets/travels/ShendanMeng/07.webp",
+        "assets/travels/ShendanMeng/08.webp",
+        "assets/travels/ShendanMeng/09.webp",
+        "assets/travels/ShendanMeng/10.webp",
+        "assets/travels/ShendanMeng/11.webp",
+        "assets/travels/ShendanMeng/12.webp",
+        "assets/travels/ShendanMeng/13.webp"
+      ]
+    },
+    {
+      "slug": "EliseEyll",
+      "title": {
+        "tr": "Elise & Eylül",
+        "en": "Elise & Eylül",
+        "de": "Elise & Eylül"
+      },
+      "blurb": {
+        "tr": "Elise & Eylül. 13 kareden bir seçki.",
+        "en": "Elise & Eylül. A selection of 13 photos.",
+        "de": "Elise & Eylül. Eine Auswahl von 13 Fotos."
+      },
+      "photos": [
+        "assets/travels/EliseEyll/01.webp",
+        "assets/travels/EliseEyll/02.webp",
+        "assets/travels/EliseEyll/03.webp",
+        "assets/travels/EliseEyll/04.webp",
+        "assets/travels/EliseEyll/05.webp",
+        "assets/travels/EliseEyll/06.webp",
+        "assets/travels/EliseEyll/07.webp",
+        "assets/travels/EliseEyll/08.webp",
+        "assets/travels/EliseEyll/09.webp",
+        "assets/travels/EliseEyll/10.webp",
+        "assets/travels/EliseEyll/11.webp",
+        "assets/travels/EliseEyll/12.webp",
+        "assets/travels/EliseEyll/13.webp"
+      ]
+    },
+    {
+      "slug": "TribergSchwarz",
+      "title": {
+        "tr": "Triberg, Schwarzwald, 2011",
+        "en": "Triberg, Black Forest, 2011",
+        "de": "Triberg, Schwarzwald, 2011"
+      },
+      "blurb": {
+        "tr": "Triberg, Schwarzwald, 2011. 13 kareden bir seçki.",
+        "en": "Triberg, Black Forest, 2011. A selection of 13 photos.",
+        "de": "Triberg, Schwarzwald, 2011. Eine Auswahl von 13 Fotos."
+      },
+      "photos": [
+        "assets/travels/TribergSchwarz/01.webp",
+        "assets/travels/TribergSchwarz/02.webp",
+        "assets/travels/TribergSchwarz/03.webp",
+        "assets/travels/TribergSchwarz/04.webp",
+        "assets/travels/TribergSchwarz/05.webp",
+        "assets/travels/TribergSchwarz/06.webp",
+        "assets/travels/TribergSchwarz/07.webp",
+        "assets/travels/TribergSchwarz/08.webp",
+        "assets/travels/TribergSchwarz/09.webp",
+        "assets/travels/TribergSchwarz/10.webp",
+        "assets/travels/TribergSchwarz/11.webp",
+        "assets/travels/TribergSchwarz/12.webp",
+        "assets/travels/TribergSchwarz/13.webp"
+      ]
+    },
+    {
+      "slug": "stanbulAralk20",
+      "title": {
+        "tr": "İstanbul, Aralık 2010",
+        "en": "Istanbul, December 2010",
+        "de": "Istanbul, Dezember 2010"
+      },
+      "blurb": {
+        "tr": "İstanbul, Aralık 2010. 12 kareden bir seçki.",
+        "en": "Istanbul, December 2010. A selection of 12 photos.",
+        "de": "Istanbul, Dezember 2010. Eine Auswahl von 12 Fotos."
+      },
+      "photos": [
+        "assets/travels/stanbulAralk20/01.webp",
+        "assets/travels/stanbulAralk20/02.webp",
+        "assets/travels/stanbulAralk20/03.webp",
+        "assets/travels/stanbulAralk20/04.webp",
+        "assets/travels/stanbulAralk20/05.webp",
+        "assets/travels/stanbulAralk20/06.webp",
+        "assets/travels/stanbulAralk20/07.webp",
+        "assets/travels/stanbulAralk20/08.webp",
+        "assets/travels/stanbulAralk20/09.webp",
+        "assets/travels/stanbulAralk20/10.webp",
+        "assets/travels/stanbulAralk20/11.webp",
+        "assets/travels/stanbulAralk20/12.webp"
+      ]
+    },
+    {
+      "slug": "ZrihPaskalyaGe",
+      "title": {
+        "tr": "Zürih Paskalya Gezisi, 2009",
+        "en": "Zurich Easter Trip, 2009",
+        "de": "Zürich Osterreise, 2009"
+      },
+      "blurb": {
+        "tr": "Zürih Paskalya Gezisi, 2009. 12 kareden bir seçki.",
+        "en": "Zurich Easter Trip, 2009. A selection of 12 photos.",
+        "de": "Zürich Osterreise, 2009. Eine Auswahl von 12 Fotos."
+      },
+      "photos": [
+        "assets/travels/ZrihPaskalyaGe/01.webp",
+        "assets/travels/ZrihPaskalyaGe/02.webp",
+        "assets/travels/ZrihPaskalyaGe/03.webp",
+        "assets/travels/ZrihPaskalyaGe/04.webp",
+        "assets/travels/ZrihPaskalyaGe/05.webp",
+        "assets/travels/ZrihPaskalyaGe/06.webp",
+        "assets/travels/ZrihPaskalyaGe/07.webp",
+        "assets/travels/ZrihPaskalyaGe/08.webp",
+        "assets/travels/ZrihPaskalyaGe/09.webp",
+        "assets/travels/ZrihPaskalyaGe/10.webp",
+        "assets/travels/ZrihPaskalyaGe/11.webp",
+        "assets/travels/ZrihPaskalyaGe/12.webp"
+      ]
+    },
+    {
+      "slug": "Chicago2014",
+      "title": {
+        "tr": "Chicago, 2014",
+        "en": "Chicago, 2014",
+        "de": "Chicago, 2014"
+      },
+      "blurb": {
+        "tr": "Chicago, 2014. 11 kareden bir seçki.",
+        "en": "Chicago, 2014. A selection of 11 photos.",
+        "de": "Chicago, 2014. Eine Auswahl von 11 Fotos."
+      },
+      "photos": [
+        "assets/travels/Chicago2014/01.webp",
+        "assets/travels/Chicago2014/02.webp",
+        "assets/travels/Chicago2014/03.webp",
+        "assets/travels/Chicago2014/04.webp",
+        "assets/travels/Chicago2014/05.webp",
+        "assets/travels/Chicago2014/06.webp",
+        "assets/travels/Chicago2014/07.webp",
+        "assets/travels/Chicago2014/08.webp",
+        "assets/travels/Chicago2014/09.webp",
+        "assets/travels/Chicago2014/10.webp",
+        "assets/travels/Chicago2014/11.webp"
+      ]
+    },
+    {
+      "slug": "WillingenAralk",
+      "title": {
+        "tr": "Willingen, Aralık 2008",
+        "en": "Willingen, December 2008",
+        "de": "Willingen, Dezember 2008"
+      },
+      "blurb": {
+        "tr": "Willingen, Aralık 2008. 10 kareden bir seçki.",
+        "en": "Willingen, December 2008. A selection of 10 photos.",
+        "de": "Willingen, Dezember 2008. Eine Auswahl von 10 Fotos."
+      },
+      "photos": [
+        "assets/travels/WillingenAralk/01.webp",
+        "assets/travels/WillingenAralk/02.webp",
+        "assets/travels/WillingenAralk/03.webp",
+        "assets/travels/WillingenAralk/04.webp",
+        "assets/travels/WillingenAralk/05.webp",
+        "assets/travels/WillingenAralk/06.webp",
+        "assets/travels/WillingenAralk/07.webp",
+        "assets/travels/WillingenAralk/08.webp",
+        "assets/travels/WillingenAralk/09.webp",
+        "assets/travels/WillingenAralk/10.webp"
+      ]
+    },
+    {
+      "slug": "TrkiyeMart2012",
+      "title": {
+        "tr": "Türkiye, Mart 2012",
+        "en": "Türkiye, March 2012",
+        "de": "Türkei, März 2012"
+      },
+      "blurb": {
+        "tr": "Türkiye, Mart 2012. 8 kareden bir seçki.",
+        "en": "Türkiye, March 2012. A selection of 8 photos.",
+        "de": "Türkei, März 2012. Eine Auswahl von 8 Fotos."
+      },
+      "photos": [
+        "assets/travels/TrkiyeMart2012/01.webp",
+        "assets/travels/TrkiyeMart2012/02.webp",
+        "assets/travels/TrkiyeMart2012/03.webp",
+        "assets/travels/TrkiyeMart2012/04.webp",
+        "assets/travels/TrkiyeMart2012/05.webp",
+        "assets/travels/TrkiyeMart2012/06.webp",
+        "assets/travels/TrkiyeMart2012/07.webp",
+        "assets/travels/TrkiyeMart2012/08.webp"
+      ]
+    },
+    {
+      "slug": "arapTadm",
+      "title": {
+        "tr": "Şarap Tadımı",
+        "en": "Wine Tasting",
+        "de": "Weinprobe"
+      },
+      "blurb": {
+        "tr": "Şarap Tadımı. 7 kareden bir seçki.",
+        "en": "Wine Tasting. A selection of 7 photos.",
+        "de": "Weinprobe. Eine Auswahl von 7 Fotos."
+      },
+      "photos": [
+        "assets/travels/arapTadm/01.webp",
+        "assets/travels/arapTadm/02.webp",
+        "assets/travels/arapTadm/03.webp",
+        "assets/travels/arapTadm/04.webp",
+        "assets/travels/arapTadm/05.webp",
+        "assets/travels/arapTadm/06.webp",
+        "assets/travels/arapTadm/07.webp"
+      ]
+    },
+    {
+      "slug": "Bozburun",
+      "title": {
+        "tr": "Bozburun",
+        "en": "Bozburun",
+        "de": "Bozburun"
+      },
+      "blurb": {
+        "tr": "Bozburun. 7 kareden bir seçki.",
+        "en": "Bozburun. A selection of 7 photos.",
+        "de": "Bozburun. Eine Auswahl von 7 Fotos."
+      },
+      "photos": [
+        "assets/travels/Bozburun/01.webp",
+        "assets/travels/Bozburun/02.webp",
+        "assets/travels/Bozburun/03.webp",
+        "assets/travels/Bozburun/04.webp",
+        "assets/travels/Bozburun/05.webp",
+        "assets/travels/Bozburun/06.webp",
+        "assets/travels/Bozburun/07.webp"
+      ]
+    },
+    {
+      "slug": "YeniEvimizzmir",
+      "title": {
+        "tr": "Yeni Evimiz, İzmir",
+        "en": "Our New Home, İzmir",
+        "de": "Unser neues Zuhause, İzmir"
+      },
+      "blurb": {
+        "tr": "Yeni Evimiz, İzmir. 6 kareden bir seçki.",
+        "en": "Our New Home, İzmir. A selection of 6 photos.",
+        "de": "Unser neues Zuhause, İzmir. Eine Auswahl von 6 Fotos."
+      },
+      "photos": [
+        "assets/travels/YeniEvimizzmir/01.webp",
+        "assets/travels/YeniEvimizzmir/02.webp",
+        "assets/travels/YeniEvimizzmir/03.webp",
+        "assets/travels/YeniEvimizzmir/04.webp",
+        "assets/travels/YeniEvimizzmir/05.webp",
+        "assets/travels/YeniEvimizzmir/06.webp"
+      ]
+    },
+    {
+      "slug": "Hawaii20142",
+      "title": {
+        "tr": "Hawaii, 2014 (devamı)",
+        "en": "Hawaii, 2014 (continued)",
+        "de": "Hawaii, 2014 (Fortsetzung)"
+      },
+      "blurb": {
+        "tr": "Hawaii, 2014 (devamı). 6 kareden bir seçki.",
+        "en": "Hawaii, 2014 (continued). A selection of 6 photos.",
+        "de": "Hawaii, 2014 (Fortsetzung). Eine Auswahl von 6 Fotos."
+      },
+      "photos": [
+        "assets/travels/Hawaii20142/01.webp",
+        "assets/travels/Hawaii20142/02.webp",
+        "assets/travels/Hawaii20142/03.webp",
+        "assets/travels/Hawaii20142/04.webp",
+        "assets/travels/Hawaii20142/05.webp",
+        "assets/travels/Hawaii20142/06.webp"
+      ]
+    },
+    {
+      "slug": "Noelay",
+      "title": {
+        "tr": "Noel Çayı",
+        "en": "Christmas Tea",
+        "de": "Weihnachtstee"
+      },
+      "blurb": {
+        "tr": "Noel Çayı. 6 kareden bir seçki.",
+        "en": "Christmas Tea. A selection of 6 photos.",
+        "de": "Weihnachtstee. Eine Auswahl von 6 Fotos."
+      },
+      "photos": [
+        "assets/travels/Noelay/01.webp",
+        "assets/travels/Noelay/02.webp",
+        "assets/travels/Noelay/03.webp",
+        "assets/travels/Noelay/04.webp",
+        "assets/travels/Noelay/05.webp",
+        "assets/travels/Noelay/06.webp"
+      ]
+    },
+    {
+      "slug": "FuldaNisan2012",
+      "title": {
+        "tr": "Fulda, Nisan 2012",
+        "en": "Fulda, April 2012",
+        "de": "Fulda, April 2012"
+      },
+      "blurb": {
+        "tr": "Fulda, Nisan 2012. 6 kareden bir seçki.",
+        "en": "Fulda, April 2012. A selection of 6 photos.",
+        "de": "Fulda, April 2012. Eine Auswahl von 6 Fotos."
+      },
+      "photos": [
+        "assets/travels/FuldaNisan2012/01.webp",
+        "assets/travels/FuldaNisan2012/02.webp",
+        "assets/travels/FuldaNisan2012/03.webp",
+        "assets/travels/FuldaNisan2012/04.webp",
+        "assets/travels/FuldaNisan2012/05.webp",
+        "assets/travels/FuldaNisan2012/06.webp"
+      ]
+    },
+    {
+      "slug": "EftymiannDoumG",
+      "title": {
+        "tr": "Eftymia'nın Doğum Günü",
+        "en": "Eftymia's Birthday",
+        "de": "Eftymias Geburtstag"
+      },
+      "blurb": {
+        "tr": "Eftymia'nın Doğum Günü. 5 kareden bir seçki.",
+        "en": "Eftymia's Birthday. A selection of 5 photos.",
+        "de": "Eftymias Geburtstag. Eine Auswahl von 5 Fotos."
+      },
+      "photos": [
+        "assets/travels/EftymiannDoumG/01.webp",
+        "assets/travels/EftymiannDoumG/02.webp",
+        "assets/travels/EftymiannDoumG/03.webp",
+        "assets/travels/EftymiannDoumG/04.webp",
+        "assets/travels/EftymiannDoumG/05.webp"
+      ]
+    },
+    {
+      "slug": "InstagramFotor",
+      "title": {
+        "tr": "Instagram Yedeğim",
+        "en": "My Instagram Backup",
+        "de": "Mein Instagram-Archiv"
+      },
+      "blurb": {
+        "tr": "Instagram Yedeğim. 4 kareden bir seçki.",
+        "en": "My Instagram Backup. A selection of 4 photos.",
+        "de": "Mein Instagram-Archiv. Eine Auswahl von 4 Fotos."
+      },
+      "photos": [
+        "assets/travels/InstagramFotor/01.webp",
+        "assets/travels/InstagramFotor/02.webp",
+        "assets/travels/InstagramFotor/03.webp",
+        "assets/travels/InstagramFotor/04.webp"
+      ]
+    },
+    {
+      "slug": "FrankfurtNisan",
+      "title": {
+        "tr": "Frankfurt, Nisan",
+        "en": "Frankfurt, April",
+        "de": "Frankfurt, April"
+      },
+      "blurb": {
+        "tr": "Frankfurt, Nisan. 4 kareden bir seçki.",
+        "en": "Frankfurt, April. A selection of 4 photos.",
+        "de": "Frankfurt, April. Eine Auswahl von 4 Fotos."
+      },
+      "photos": [
+        "assets/travels/FrankfurtNisan/01.webp",
+        "assets/travels/FrankfurtNisan/02.webp",
+        "assets/travels/FrankfurtNisan/03.webp",
+        "assets/travels/FrankfurtNisan/04.webp"
+      ]
+    }
+  ],
+  "ig_moments": [
+    {
+      "file": "assets/instagram/01.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/02.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/03.webp",
+      "caption": {
+        "tr": "Dün hava sertti. Fırtınadan kaçanlarla doldu liman. Sabah erken GÜNDOĞUSU esiyordu. Simdi YILDIZa döndü. Bu mevsimde nadir eser boyle. Denizin rengi de rüzgara göre değişiyor. Şimdi çivit mavisi oldu. 🥰",
+        "en": "The weather was rough yesterday. The harbour filled with boats fleeing the storm. It's rare for this season. 🥰",
+        "de": "Gestern war das Wetter rau. Der Hafen füllte sich mit Booten auf der Flucht vor dem Sturm. Selten für diese Jahreszeit. 🥰"
+      }
+    },
+    {
+      "file": "assets/instagram/04.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/05.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/06.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/07.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/08.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/09.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/10.webp",
+      "caption": {
+        "tr": "Dün akşam bir yildir calismalarina katildigim koronun konseri vardi. Herkes cok mutluydu. Basarili oldu. Uzun uzun alkiş aldik.  Benim için güzel bir anı oldu.",
+        "en": "Last night was the concert of the choir I've rehearsed with for a year. It went well, long applause — a lovely memory.",
+        "de": "Gestern Abend war das Konzert des Chors, mit dem ich seit einem Jahr probe. Es lief gut, langer Applaus — eine schöne Erinnerung."
+      }
+    },
+    {
+      "file": "assets/instagram/11.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/12.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/13.webp",
+      "caption": {
+        "tr": "Karsimizdaki evin eski dış merdivenlerini yenilemek istiyormus sahibi. Iki gun önce üç işçi ,aletleri tasiyan kamyonet ve bir de çıkan molozu koyacakları konteynerle gelip işe başladılar. Önce kaplama taslarini çıkardılar. Sonra balyozlarla basladilar alttaki betonu kirmaya. Hepsi BEŞ basamak olan merdivenlerin vur Allah vur sadece bir basamagini kirabildiler. Arada oturdugum yerden bir titresim duyuyorum. Deprem mi? diyorum. Sonra burada deprem olmadigini hatirlayip rahatliyorum. Kocam söylenmeye basladi. ''Ulan bonbardimana karşı bunker mi yapiyorsunuz? Ne bu be? Hepi topu 5 basamakli ev giris merdiveni. Ordu ustune cikip da ziplayacak mi? Alman abartisi iste'' diye. Biraz sonra adamlar kiramayinca işi\n birakti. Ertesi gün  paletli küçük bir kırıcı getirdiler. TAKA TAKA TAKA bütün gün calisti. Kalan dört basamağı kırdı. 3.gun  sabah kapinin onunde kalan platformu kırdı. Arkadan bir küçük kepçe ve seyyar tuvalet geldi. Merdivenden cikan buyuk beton parcalarini konteynere doldurdu. Evin etrafini seperatorle kapattilar. Etrafa bir tek toz toprak sacilmadi. Simdi evin etrafini kazmaya basladilar. Galiba izolasyon yapilacak.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/14.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/15.webp",
+      "caption": {
+        "tr": "Bugün nihayet yillardir istediğimiz  Kastabos Antik Kentine tırmandı. 14 bin adim. Yarısı tırmanma. Şükürler olsun.",
+        "en": "Today we finally climbed up to Kastabos, the ancient city we'd wanted to see for years. 14,000 steps, half of it a climb. So grateful.",
+        "de": "Heute sind wir endlich zur antiken Stadt Kastabos hochgestiegen, die wir seit Jahren sehen wollten. 14.000 Schritte, die Hälfte davon Klettern. Sehr dankbar."
+      }
+    },
+    {
+      "file": "assets/instagram/16.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/17.webp",
+      "caption": {
+        "tr": "HERKESE SAĞLIK, NEŞE, BOLLUK; ÜLKEMIZE ÖZGÜRLÜK, REFAH, ADALET, DÜNYAYA BARIŞ, AKLI BAŞINDA POLITIKACILAR  GELMESINI DILIYORUM.",
+        "en": "Wishing everyone health, joy and abundance; freedom, prosperity and justice for our country; peace for the world, and sensible politicians.",
+        "de": "Ich wünsche allen Gesundheit, Freude und Fülle; unserem Land Freiheit, Wohlstand und Gerechtigkeit; der Welt Frieden und vernünftige Politiker."
+      }
+    },
+    {
+      "file": "assets/instagram/18.webp",
+      "caption": {
+        "tr": "BU COCUKLAR PIRLANTA!",
+        "en": "These kids are diamonds!",
+        "de": "Diese Kinder sind Diamanten!"
+      }
+    },
+    {
+      "file": "assets/instagram/19.webp",
+      "caption": {
+        "tr": "Arkadaşım Mufide Gönenç'in kızı Müge ve torunu Pera  melek oldular. Cenazeler 23 Ocak Perşembe  gunu Urla yeni camiden kaldırılıp birlikte defnedilecekler.",
+        "en": "My friend Mufide Gönenç's daughter Müge and grandchild Pera have passed away. In loving memory.",
+        "de": "Die Tochter Müge und das Enkelkind Pera meiner Freundin Mufide Gönenç sind verstorben. In liebevoller Erinnerung."
+      }
+    },
+    {
+      "file": "assets/instagram/20.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/21.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/22.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/23.webp",
+      "caption": {
+        "tr": "Akşam, yine akşam, yine akşam. Göllerde bu dem bir kamış olsam. A.HAŞİM",
+        "en": "\"Evening, evening again, evening again. If only I were a reed on the lake now.\" — A. Haşim",
+        "de": "\"Abend, wieder Abend, wieder Abend. Wäre ich jetzt doch ein Schilfrohr am See.\" — A. Haşim"
+      }
+    },
+    {
+      "file": "assets/instagram/24.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/25.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/26.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/27.webp",
+      "caption": {
+        "tr": "Bugün Rhein kalabalık.",
+        "en": "The Rhein is busy today.",
+        "de": "Der Rhein ist heute voll."
+      }
+    },
+    {
+      "file": "assets/instagram/28.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/29.webp",
+      "caption": {
+        "tr": "Dün aksam SANAL YAZI EVİNDE  YEŞİM CİMCOZ'UN  bu senenin son dersi ders ötesiydi.Herşey kendiliginden , biraz spritüel, nazik, samimi, öğretici.. Yeşimcim❤️❤️❤️❤️❤️",
+        "en": "Last night's session at the online writing house with Yeşim Cimcoz, the year's last class, went beyond a class. ❤️",
+        "de": "Die gestrige Sitzung im Online-Schreibhaus bei Yeşim Cimcoz, die letzte Klasse des Jahres, ging über den Unterricht hinaus. ❤️"
+      }
+    },
+    {
+      "file": "assets/instagram/30.webp",
+      "caption": {
+        "tr": "Balkondan günü batırmak.",
+        "en": "Watching the day set from the balcony.",
+        "de": "Vom Balkon aus den Tag untergehen sehen."
+      }
+    },
+    {
+      "file": "assets/instagram/31.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/32.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/33.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/34.webp",
+      "caption": {
+        "tr": "Acmak icinbeni beklemişler☺️",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/35.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/36.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/37.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/38.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/39.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/40.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/41.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/42.webp",
+      "caption": {
+        "tr": "Kalbim orada kaldi. Orada da doğmuş olabilirdim. Coğrafya kaderdir.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/43.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/44.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/45.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/46.webp",
+      "caption": {
+        "tr": "Bugun liman kalabalik.Yine yazdan kalma bir gün.  Gelecek iki gün hic rüzgar yok. Gümrükten çıkış izni almak icin gelmis sanirim.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/47.webp",
+      "caption": {
+        "tr": "Bugün Städel Museum da,  Monet sergisinde gördüklerim beni Monet'den daha çok etkiledi. Yerde resim çizen çocuk mankenmiş meğer. Herkesin gerçeği anlamasi biraz zaman aliyordu.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/48.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/49.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/50.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/51.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/52.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/53.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/54.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/55.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/56.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/57.webp",
+      "caption": {
+        "tr": "Bu da eski.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/58.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/59.webp",
+      "caption": {
+        "tr": "Eski",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/60.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/61.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/62.webp",
+      "caption": {
+        "tr": "Hesabım hacklenince tekrar eski resimleri  koyuyorum.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/63.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/64.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/65.webp",
+      "caption": {
+        "tr": "Çok iyi bir yazar. Kitaba bayildim. Yaşar Kemal in Ruhu kaçmış içine.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/66.webp",
+      "caption": {
+        "tr": "BAHÇEDEN😊",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/67.webp",
+      "caption": {
+        "tr": "Simdilik Yakin Kitapevi ve yakinkitapevi.com.tr den temin ediliyor.  Bir hafta içinde de D&R, PANDORA, KIRMIZI KEDI, KITAP SEÇ,  BKM de satışa çıkıyor.  Kendi kitapcinizdan ister iseniz  getirtiyorlar.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/68.webp",
+      "caption": {
+        "tr": "Nihayet bugün çıktı. Covit günlerinde iki yıllık emekle hayalim  gerçekleşti.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/69.webp",
+      "caption": {
+        "tr": "As of now September sunset in Izmir.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/70.webp",
+      "caption": {
+        "tr": "Geçen yıl çekmişim. Symi'de insan halleri.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/71.webp",
+      "caption": {
+        "tr": "We have to do this again!",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/72.webp",
+      "caption": {
+        "tr": "Bekliyorum.🌸",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/73.webp",
+      "caption": {
+        "tr": "Frankfurt'u özleyeceğimi asla düşünmezdim!",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/74.webp",
+      "caption": {
+        "tr": "Truva'yı görmek lazım. Özellikle ödül alan müze binasını.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/75.webp",
+      "caption": {
+        "tr": "Güzel bir gün oldu.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/76.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/77.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/78.webp",
+      "caption": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/79.webp",
+      "caption": {
+        "tr": "BU GECE ARAMIZDA BİRİ KURT ADAM OLACAK! 😳BOZBURUN 7.00",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/80.webp",
+      "caption": {
+        "tr": "Bugün bu Yaşlı denizci bu tekneyle İngiltere'dan Bozburun limanina geldi.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/81.webp",
+      "caption": {
+        "tr": "Saygi sevgi ve minnetle anıyoruz.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/82.webp",
+      "caption": {
+        "tr": "Dün gece açmış. Bu yıl ilk kez.",
+        "en": "",
+        "de": ""
+      }
+    },
+    {
+      "file": "assets/instagram/83.webp",
+      "caption": {
+        "tr": "Tekneler döndü. Karaya çekilmeye basladi. Isler bitince düğünler baslar. Kazanilan paralar harcanir. Ozlemler giderilir.Zeytin agaci olanlari yogun bir ay bekler. Zeytin toplanacak. Sıkıma yollanacak.  Kis gunlerinde es dost ziyaretleri, aile toplantilari gece ev gezmelerine  gidilecek. Yeni tekne inşaa edenler bu kis çok calisacak. Gelecek yaza yeni tekne hazir olacak. Masraf cok. Sonra ayni seyler tekrar edecek.",
+        "en": "",
+        "de": ""
+      }
+    }
+  ],
+  "stories": [
+    {
+      "title": {
+        "tr": "Komşu hikayesi",
+        "en": "The Neighbour's Renovation",
+        "de": "Die Renovierung des Nachbarn"
+      },
+      "meta": {
+        "tr": "Almanya günlük hayatı",
+        "en": "Everyday life in Germany",
+        "de": "Alltag in Deutschland"
+      },
+      "text": {
+        "tr": "Karsimizdaki evin eski dış merdivenlerini yenilemek istiyormus sahibi. Iki gun önce üç işçi, aletleri tasiyan kamyonet ve bir de çıkan molozu koyacakları konteynerle gelip işe başladılar. Önce kaplama taslarini çıkardılar. Sonra balyozlarla basladilar alttaki betonu kirmaya. Hepsi BEŞ basamak olan merdivenlerin vur Allah vur sadece bir basamagini kirabildiler. Arada oturdugum yerden bir titresim duyuyorum. Deprem mi? diyorum. Sonra burada deprem olmadigini hatirlayip rahatliyorum. Kocam söylenmeye basladi: 'Ulan bonbardimana karşı bunker mi yapiyorsunuz? Ne bu be? Hepi topu 5 basamakli ev giris merdiveni. Ordu ustune cikip da ziplayacak mi? Alman abartisi iste' diye. Biraz sonra adamlar kiramayinca işi birakti. Ertesi gün paletli küçük bir kırıcı getirdiler. TAKA TAKA TAKA bütün gün calisti. Kalan dört basamağı kırdı. 3. gün sabah kapinin onunde kalan platformu kırdı. Arkadan bir küçük kepçe ve seyyar tuvalet geldi. Merdivenden cikan buyuk beton parcalarini konteynere doldurdu. Evin etrafini seperatorle kapattilar. Etrafa bir tek toz toprak sacilmadi. Simdi evin etrafini kazmaya basladilar. Galiba izolasyon yapilacak.",
+        "en": "The owner of the house across from us wanted to renew the old front steps. Two days later three workers showed up with a van full of tools and a container for the rubble. First they pulled up the cladding stones. Then they started breaking the concrete underneath with sledgehammers. Of the five steps, after all that hammering they had only managed to break one. Every now and then I'd feel a tremor from where I was sitting. \"Is that an earthquake?\" I'd wonder, then remember there's no such thing here and relax. My husband started grumbling: \"Are you building a bunker against an air raid or something? What is this? It's a five-step entrance staircase. Are they planning to jump off the top? Such German thoroughness.\" A little later the workers gave up trying to break it by hand. The next day they brought a small tracked breaker. It hammered away all day — TAK TAK TAK — and finished off the remaining four steps. On the third day, in the morning, it broke up the platform left by the door. Then a small excavator and a portable toilet arrived. The excavator loaded the big chunks of concrete from the steps into the container. They fenced off the area around the house. Not a speck of dust escaped. Now they've started digging around the house. I think they're about to do the waterproofing.",
+        "de": "Der Besitzer des Hauses gegenüber wollte die alte Außentreppe erneuern. Zwei Tage später kamen drei Arbeiter mit einem Transporter voller Werkzeug und einem Container für den Schutt. Zuerst entfernten sie die Verkleidungssteine. Dann begannen sie, den darunterliegenden Beton mit Vorschlaghämmern zu zerschlagen. Von den fünf Stufen hatten sie nach all dem Hämmern nur eine geschafft. Ab und zu spürte ich von meinem Platz aus ein Beben. \"Ist das ein Erdbeben?\", dachte ich, erinnerte mich dann, dass es hier so etwas nicht gibt, und beruhigte mich. Mein Mann fing an zu schimpfen: \"Baut ihr einen Bunker gegen Bombenangriffe oder was? Was soll das? Das ist eine Fünf-Stufen-Eingangstreppe. Wollen die oben drauf springen? So eine deutsche Gründlichkeit.\" Kurz darauf gaben die Arbeiter den Versuch auf, von Hand weiter zu zerschlagen. Am nächsten Tag brachten sie einen kleinen Raupenbrecher. Er hämmerte den ganzen Tag — TAK TAK TAK — und erledigte die restlichen vier Stufen. Am dritten Tag zerschlug er morgens die verbliebene Plattform vor der Tür. Dann kamen ein kleiner Bagger und eine mobile Toilette. Der Bagger lud die großen Betonbrocken der Treppe in den Container. Sie zäunten den Bereich um das Haus ab. Kein Staubkorn entkam. Jetzt haben sie angefangen, rund um das Haus zu graben. Ich glaube, jetzt kommt die Abdichtung."
+      }
+    },
+    {
+      "title": {
+        "tr": "Yazı dersi anısı",
+        "en": "A Writing Class Memory",
+        "de": "Erinnerung an eine Schreibklasse"
+      },
+      "meta": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      },
+      "text": {
+        "tr": "Dün aksam SANAL YAZI EVİNDE YEŞİM CİMCOZ'UN bu senenin son dersi ders ötesiydi. Herşey kendiliginden, biraz spritüel, nazik, samimi, öğretici.. Yeşimcim❤️",
+        "en": "Last night's session at the ONLINE WRITING HOUSE with YEŞİM CİMCOZ, the last class of the year, went beyond a class. Everything flowed naturally, a little spiritual, gentle, warm, instructive.. My dear Yeşim ❤️",
+        "de": "Die gestrige Sitzung im ONLINE-SCHREIBHAUS bei YEŞİM CİMCOZ, die letzte Klasse des Jahres, ging über eine gewöhnliche Unterrichtsstunde hinaus. Alles floss wie von selbst, ein wenig spirituell, sanft, herzlich, lehrreich.. Meine liebe Yeşim ❤️"
+      }
+    },
+    {
+      "title": {
+        "tr": "Koro konseri anısı",
+        "en": "A Choir Concert Memory",
+        "de": "Erinnerung an ein Chorkonzert"
+      },
+      "meta": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      },
+      "text": {
+        "tr": "Dün akşam bir yildir calismalarina katildigim koronun konseri vardi. Herkes cok mutluydu. Basarili oldu. Uzun uzun alkiş aldik. Benim için güzel bir anı oldu.",
+        "en": "Last night was the concert of the choir I've been rehearsing with for a year. Everyone was so happy. It went well. We got long, warm applause. It was a beautiful memory for me.",
+        "de": "Gestern Abend war das Konzert des Chors, mit dem ich seit einem Jahr probe. Alle waren so glücklich. Es lief gut. Wir bekamen langen, herzlichen Applaus. Für mich war es eine schöne Erinnerung."
+      }
+    },
+    {
+      "title": {
+        "tr": "Kitap çıkışı",
+        "en": "The Book is Out",
+        "de": "Das Buch ist da"
+      },
+      "meta": {
+        "tr": "",
+        "en": "",
+        "de": ""
+      },
+      "text": {
+        "tr": "Nihayet bugün çıktı. Covit günlerinde iki yıllık emekle hayalim gerçekleşti.",
+        "en": "It finally came out today. A dream two years in the making, through the Covid years, has come true.",
+        "de": "Es ist heute endlich erschienen. Ein Traum, an dem ich zwei Jahre lang, mitten in den Covid-Jahren, gearbeitet habe, ist wahr geworden."
+      }
+    }
+  ],
+  "thoughts": [
+    {
+      "text": {
+        "tr": "Dün hava sertti. Fırtınadan kaçanlarla doldu liman. Sabah erken GÜNDOĞUSU esiyordu. Simdi YILDIZa döndü. Bu mevsimde nadir eser boyle. Denizin rengi de rüzgara göre değişiyor. Şimdi çivit mavisi oldu. 🥰",
+        "en": "The weather was rough yesterday. The harbour filled with boats fleeing the storm. Early in the morning the wind was from the EAST. Now it has turned NORTH. Rare for this season. The colour of the sea changes with the wind too. Now it has turned indigo. 🥰",
+        "de": "Gestern war das Wetter rau. Der Hafen füllte sich mit Booten, die vor dem Sturm flüchteten. Früh am Morgen wehte der Wind aus OST. Jetzt hat er auf NORD gedreht. Selten für diese Jahreszeit. Auch die Farbe des Meeres ändert sich mit dem Wind. Jetzt ist sie indigoblau geworden. 🥰"
+      }
+    },
+    {
+      "text": {
+        "tr": "Bugün Städel Museum da, Monet sergisinde gördüklerim beni Monet'den daha çok etkiledi. Yerde resim çizen çocuk mankenmiş meğer. Herkesin gerçeği anlamasi biraz zaman aliyordu.",
+        "en": "What I saw today at the Monet exhibition at the Städel Museum moved me more than Monet himself. It turned out the child drawing on the floor was a live model. It took everyone a moment to realise what was real.",
+        "de": "Was ich heute in der Monet-Ausstellung im Städel Museum sah, berührte mich mehr als Monet selbst. Das Kind, das auf dem Boden zeichnete, entpuppte sich als lebendes Modell. Alle brauchten einen Moment, um zu begreifen, was echt war."
+      }
+    },
+    {
+      "text": {
+        "tr": "Kalbim orada kaldi. Orada da doğmuş olabilirdim. Coğrafya kaderdir.",
+        "en": "My heart stayed there. I could have been born there too. Geography is destiny.",
+        "de": "Mein Herz ist dort geblieben. Ich hätte auch dort geboren werden können. Geografie ist Schicksal."
+      }
+    },
+    {
+      "text": {
+        "tr": "Kendimi kotu hissettigimde sanat beni ayaga kaldirir. Sanat olmazsa nasil yasarim!",
+        "en": "When I feel low, art lifts me back up. I don't know how I'd live without it!",
+        "de": "Wenn ich mich schlecht fühle, richtet mich die Kunst wieder auf. Ich weiß nicht, wie ich ohne sie leben könnte!"
+      }
+    },
+    {
+      "text": {
+        "tr": "Güneş gitti. Işık değişti. Hava soğudu. Dondum. Yerim dar. Gerisi yarına.",
+        "en": "The sun is gone. The light has changed. The air turned cold. I froze. My place is narrow. The rest is for tomorrow.",
+        "de": "Die Sonne ist weg. Das Licht hat sich verändert. Die Luft wurde kalt. Ich fror. Mein Platz ist eng. Der Rest ist für morgen."
+      }
+    }
+  ]
+}

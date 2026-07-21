@@ -4,6 +4,9 @@ instagram-*/
 google-takeout*/
 *-export/
 
+# Yerel içerik seçim galerisi - is araci, site icerigi degil
+_secim/
+
 # İşletim sistemi / editör artıkları
 Thumbs.db
 desktop.ini

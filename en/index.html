@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sühendan Mengüç — Painter, Writer and Traveler</title>
-  <meta name="description" content="The personal site of Sühendan Mengüç, painter, writer and traveler. Oil and watercolour paintings, short stories, travel notes and reflections on life.">
+  <meta name="description" content="The personal site of Sühendan Mengüç, painter, writer and traveler. Watercolour paintings, travel photographs, true stories and reflections on life.">
   <link rel="canonical" href="https://suhendanmenguc.com/en/">
   <link rel="alternate" hreflang="tr" href="https://suhendanmenguc.com/">
   <link rel="alternate" hreflang="en" href="https://suhendanmenguc.com/en/">
@@ -13,12 +13,12 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sühendan Mengüç">
   <meta property="og:title" content="Sühendan Mengüç — Painter, Writer and Traveler">
-  <meta property="og:description" content="The personal site of Sühendan Mengüç, painter, writer and traveler. Oil and watercolour paintings, short stories, travel notes and reflections on life.">
+  <meta property="og:description" content="The personal site of Sühendan Mengüç, painter, writer and traveler. Watercolour paintings, travel photographs, true stories and reflections on life.">
   <meta property="og:url" content="https://suhendanmenguc.com/en/">
   <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sühendan Mengüç — Painter, Writer and Traveler">
-  <meta name="twitter:description" content="The personal site of Sühendan Mengüç, painter, writer and traveler. Oil and watercolour paintings, short stories, travel notes and reflections on life.">
+  <meta name="twitter:description" content="The personal site of Sühendan Mengüç, painter, writer and traveler. Watercolour paintings, travel photographs, true stories and reflections on life.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,7 +26,7 @@
     "name": "S\u00fchendan Meng\u00fc\u00e7",
     "url": "https://suhendanmenguc.com/en/",
     "jobTitle": "Painter",
-    "description": "The personal site of Sühendan Mengüç, painter, writer and traveler. Oil and watercolour paintings, short stories, travel notes and reflections on life.",
+    "description": "The personal site of Sühendan Mengüç, painter, writer and traveler. Watercolour paintings, travel photographs, true stories and reflections on life.",
     "knowsLanguage": ["tr", "en", "de"]
   }
   </script>
@@ -105,18 +105,19 @@
     .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(255, 90, 95, 0.3); }
     #about { display: grid; grid-template-columns: 260px 1fr; gap: 3rem; align-items: center; }
     .portrait {
-      aspect-ratio: 3 / 4; border-radius: 12px;
+      aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden;
       background: linear-gradient(135deg, #6fe0cb, #0e9e8e);
       display: flex; align-items: center; justify-content: center; color: #fff;
       font-style: italic; text-align: center; padding: 1rem;
       box-shadow: 0 14px 30px rgba(12, 59, 52, 0.18);
     }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; }
     .about-text h2 { margin-bottom: 1rem; }
     .about-text p + p { margin-top: 1rem; }
     .alt { background: var(--cream-2); max-width: none; }
     .alt > .inner { max-width: 1080px; margin: 0 auto; }
     .gallery-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.5rem;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.2rem;
     }
     .art {
       background: var(--cream); border-radius: 10px; overflow: hidden;
@@ -124,14 +125,10 @@
       transition: transform 0.25s, box-shadow 0.25s;
     }
     .art:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(12, 59, 52, 0.16); }
-    .art .thumb {
-      aspect-ratio: 4 / 3; background-size: cover; background-position: center;
-      display: flex; align-items: center; justify-content: center; color: #fff;
-      font-family: var(--serif); font-size: 1.4rem;
-    }
-    .art .caption { padding: 0.9rem 1rem 1.1rem; }
-    .art .caption h3 { font-size: 1.1rem; margin-bottom: 0.2rem; }
-    .art .caption span { font-size: 0.82rem; color: var(--muted); }
+    .art img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+    .art .caption { padding: 0.7rem 0.9rem 0.9rem; }
+    .art .caption h3 { font-size: 1rem; margin-bottom: 0.1rem; }
+    .art .caption span { font-size: 0.8rem; color: var(--muted); }
     .stories { display: flex; flex-direction: column; gap: 1.2rem; }
     .story {
       background: var(--cream); border: 1px solid var(--cream-2);
@@ -139,29 +136,39 @@
       padding: 1.4rem 1.6rem; cursor: pointer; transition: box-shadow 0.2s;
     }
     .story:hover { box-shadow: 0 10px 24px rgba(12, 59, 52, 0.1); }
+    .story .meta {
+      font-size: 0.78rem; letter-spacing: 0.5px; text-transform: uppercase;
+      color: var(--terracotta); margin-bottom: 0.2rem;
+    }
     .story h3 { font-size: 1.25rem; margin-bottom: 0.3rem; }
     .story .excerpt { color: var(--muted); }
-    .story .full { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-    .story.open .full { max-height: 600px; }
-    .story .full p { margin-top: 1rem; }
+    .story .full { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .story.open .full { max-height: 2000px; }
+    .story .full p { margin-top: 1rem; white-space: pre-line; }
     .story .more {
       display: inline-block; margin-top: 0.8rem; color: var(--terracotta);
       font-size: 0.85rem; font-weight: 600;
     }
-    .travels { display: flex; flex-direction: column; gap: 2.5rem; }
-    .travel { display: grid; grid-template-columns: 300px 1fr; gap: 2rem; align-items: center; }
-    .travel:nth-child(even) .photo { order: 2; }
-    .travel .photo {
-      aspect-ratio: 4 / 3; border-radius: 10px; background-size: cover;
-      background-position: center; display: flex; align-items: center;
-      justify-content: center; color: #fff; font-family: var(--serif);
-      box-shadow: 0 12px 26px rgba(12, 59, 52, 0.14);
+    .travels { display: flex; flex-direction: column; gap: 2rem; }
+    .travel-block {
+      background: var(--cream); border-radius: 12px; padding: 1.6rem 1.6rem 1.8rem;
+      box-shadow: 0 8px 20px rgba(12, 59, 52, 0.07);
     }
-    .travel .place {
-      font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; color: var(--terracotta);
+    .travel-block h3 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+    .travel-block .blurb { color: var(--muted); font-style: italic; margin-bottom: 1rem; font-size: 0.92rem; }
+    .photo-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.6rem;
     }
-    .travel h3 { font-size: 1.5rem; margin: 0.2rem 0 0.6rem; }
-    .travel p { color: var(--muted); }
+    .photo-grid img {
+      width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px;
+      cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; display: block;
+    }
+    .photo-grid img:hover { transform: scale(1.04); box-shadow: 0 6px 16px rgba(12, 59, 52, 0.2); }
+    .moment { background: var(--cream); border-radius: 10px; overflow: hidden;
+      box-shadow: 0 6px 16px rgba(12, 59, 52, 0.07); cursor: pointer; transition: transform 0.2s; }
+    .moment:hover { transform: translateY(-3px); }
+    .moment img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+    .moment .cap { padding: 0.5rem 0.7rem 0.7rem; font-size: 0.78rem; color: var(--muted); }
     .thoughts {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;
     }
@@ -185,18 +192,14 @@
     footer small { color: #7fa79d; font-size: 0.8rem; }
     .lightbox {
       display: none; position: fixed; inset: 0; z-index: 200;
-      background: rgba(12, 59, 52, 0.9); align-items: center; justify-content: center; padding: 2rem;
+      background: rgba(12, 59, 52, 0.92); align-items: center; justify-content: center; padding: 2rem;
     }
     .lightbox.show { display: flex; }
-    .lightbox .box { max-width: 640px; width: 100%; background: var(--cream); border-radius: 12px; overflow: hidden; }
-    .lightbox .lb-img {
-      aspect-ratio: 4 / 3; background-size: cover; background-position: center;
-      display: flex; align-items: center; justify-content: center; color: #fff;
-      font-family: var(--serif); font-size: 2rem;
-    }
-    .lightbox .lb-cap { padding: 1.2rem 1.5rem 1.6rem; }
-    .lightbox .lb-cap h3 { font-size: 1.4rem; margin-bottom: 0.3rem; }
-    .lightbox .lb-cap span { color: var(--muted); }
+    .lightbox .box { max-width: 720px; width: 100%; background: var(--cream); border-radius: 12px; overflow: hidden; }
+    .lightbox .lb-img { width: 100%; max-height: 72vh; object-fit: contain; display: block; background: #05201b; }
+    .lightbox .lb-cap { padding: 1rem 1.4rem 1.4rem; }
+    .lightbox .lb-cap h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+    .lightbox .lb-cap span { color: var(--muted); font-size: 0.9rem; }
     .lightbox .close {
       position: absolute; top: 1.5rem; right: 2rem; color: #fff; font-size: 2.2rem;
       cursor: pointer; line-height: 1; background: none; border: none;
@@ -205,7 +208,6 @@
       section { padding: 3.5rem 1.4rem; }
       #about { grid-template-columns: 1fr; }
       .portrait { max-width: 260px; margin: 0 auto; }
-      .travel, .travel:nth-child(even) .photo { grid-template-columns: 1fr; order: 0; }
       header { padding: 0.8rem 1.2rem; }
       nav { gap: 0.2rem 0.9rem; }
     }
@@ -219,6 +221,7 @@
       <a href="/en/#paintings">Paintings</a>
       <a href="/en/#stories">Stories</a>
       <a href="/en/#travels">Travels</a>
+      <a href="/en/#moments">Moments</a>
       <a href="/en/#thoughts">Thoughts</a>
       <span class="langs">
         <a class="lang-btn" href="/" hreflang="tr">TR</a>
@@ -236,7 +239,7 @@
   </section>
 
   <section id="about">
-    <div class="portrait">Portrait photo</div>
+    <div class="portrait"><img src="/assets/profile/portrait.webp" alt="About Me"></div>
     <div class="about-text">
       <h2 class="section-title">About Me</h2>
       <p>Hello, I'm Sühendan. I spend my life painting, writing stories and travelling the world. I feel most alive in front of a canvas or in the streets of a city I don't yet know.</p>
@@ -249,47 +252,100 @@
       <h2 class="section-title">Paintings</h2>
       <p class="section-lead">The colours and moments I leave on the canvas.</p>
       <div class="gallery-grid">
-        <figure class="art" onclick="openLightbox(this)" data-title="First Light of Morning" data-medium="Oil on canvas">
-          <div class="thumb" style="background:linear-gradient(135deg,#ff8a5b,#ff5a5f)">1</div>
-          <figcaption class="caption">
-            <h3>First Light of Morning</h3>
-            <span>Oil on canvas</span>
-          </figcaption>
+        <figure class="art">
+          <img src="/assets/art/01.webp" loading="lazy" decoding="async" alt="Watercolour Study 1"
+               onclick="openLightbox(this)" data-title="Watercolour Study 1">
+          <figcaption class="caption"><h3>Watercolour Study 1</h3></figcaption>
         </figure>
-        <figure class="art" onclick="openLightbox(this)" data-title="By the Sea" data-medium="Watercolour">
-          <div class="thumb" style="background:linear-gradient(135deg,#29c7d6,#0a7fa3)">2</div>
-          <figcaption class="caption">
-            <h3>By the Sea</h3>
-            <span>Watercolour</span>
-          </figcaption>
+        <figure class="art">
+          <img src="/assets/art/02.webp" loading="lazy" decoding="async" alt="Watercolour Study 2"
+               onclick="openLightbox(this)" data-title="Watercolour Study 2">
+          <figcaption class="caption"><h3>Watercolour Study 2</h3></figcaption>
         </figure>
-        <figure class="art" onclick="openLightbox(this)" data-title="Autumn Garden" data-medium="Acrylic">
-          <div class="thumb" style="background:linear-gradient(135deg,#ffc13d,#ff8a3d)">3</div>
-          <figcaption class="caption">
-            <h3>Autumn Garden</h3>
-            <span>Acrylic</span>
-          </figcaption>
+        <figure class="art">
+          <img src="/assets/art/03.webp" loading="lazy" decoding="async" alt="Watercolour Study 3"
+               onclick="openLightbox(this)" data-title="Watercolour Study 3">
+          <figcaption class="caption"><h3>Watercolour Study 3</h3></figcaption>
         </figure>
-        <figure class="art" onclick="openLightbox(this)" data-title="Night and Silence" data-medium="Mixed media">
-          <div class="thumb" style="background:linear-gradient(135deg,#b15bd6,#6a2fb0)">4</div>
-          <figcaption class="caption">
-            <h3>Night and Silence</h3>
-            <span>Mixed media</span>
-          </figcaption>
+        <figure class="art">
+          <img src="/assets/art/04.webp" loading="lazy" decoding="async" alt="Watercolour Study 4"
+               onclick="openLightbox(this)" data-title="Watercolour Study 4">
+          <figcaption class="caption"><h3>Watercolour Study 4</h3></figcaption>
         </figure>
-        <figure class="art" onclick="openLightbox(this)" data-title="Olive Trees" data-medium="Oil on canvas">
-          <div class="thumb" style="background:linear-gradient(135deg,#7fd94a,#0e9e8e)">5</div>
-          <figcaption class="caption">
-            <h3>Olive Trees</h3>
-            <span>Oil on canvas</span>
-          </figcaption>
+        <figure class="art">
+          <img src="/assets/art/05.webp" loading="lazy" decoding="async" alt="Watercolour Study 5"
+               onclick="openLightbox(this)" data-title="Watercolour Study 5">
+          <figcaption class="caption"><h3>Watercolour Study 5</h3></figcaption>
         </figure>
-        <figure class="art" onclick="openLightbox(this)" data-title="A Portrait Study" data-medium="Charcoal">
-          <div class="thumb" style="background:linear-gradient(135deg,#ff5aa5,#c02f7a)">6</div>
-          <figcaption class="caption">
-            <h3>A Portrait Study</h3>
-            <span>Charcoal</span>
-          </figcaption>
+        <figure class="art">
+          <img src="/assets/art/06.webp" loading="lazy" decoding="async" alt="Watercolour Study 6"
+               onclick="openLightbox(this)" data-title="Watercolour Study 6">
+          <figcaption class="caption"><h3>Watercolour Study 6</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/07.webp" loading="lazy" decoding="async" alt="Watercolour Study 7"
+               onclick="openLightbox(this)" data-title="Watercolour Study 7">
+          <figcaption class="caption"><h3>Watercolour Study 7</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/08.webp" loading="lazy" decoding="async" alt="Watercolour Study 8"
+               onclick="openLightbox(this)" data-title="Watercolour Study 8">
+          <figcaption class="caption"><h3>Watercolour Study 8</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/09.webp" loading="lazy" decoding="async" alt="Watercolour Study 9"
+               onclick="openLightbox(this)" data-title="Watercolour Study 9">
+          <figcaption class="caption"><h3>Watercolour Study 9</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/10.webp" loading="lazy" decoding="async" alt="Watercolour Study 10"
+               onclick="openLightbox(this)" data-title="Watercolour Study 10">
+          <figcaption class="caption"><h3>Watercolour Study 10</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/11.webp" loading="lazy" decoding="async" alt="Watercolour Study 11"
+               onclick="openLightbox(this)" data-title="Watercolour Study 11">
+          <figcaption class="caption"><h3>Watercolour Study 11</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/12.webp" loading="lazy" decoding="async" alt="Watercolour Study 12"
+               onclick="openLightbox(this)" data-title="Watercolour Study 12">
+          <figcaption class="caption"><h3>Watercolour Study 12</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/13.webp" loading="lazy" decoding="async" alt="Watercolour Study 13"
+               onclick="openLightbox(this)" data-title="Watercolour Study 13">
+          <figcaption class="caption"><h3>Watercolour Study 13</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/14.webp" loading="lazy" decoding="async" alt="Watercolour Study 14"
+               onclick="openLightbox(this)" data-title="Watercolour Study 14">
+          <figcaption class="caption"><h3>Watercolour Study 14</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/15.webp" loading="lazy" decoding="async" alt="Watercolour Study 15"
+               onclick="openLightbox(this)" data-title="Watercolour Study 15">
+          <figcaption class="caption"><h3>Watercolour Study 15</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/16.webp" loading="lazy" decoding="async" alt="Watercolour Study 16"
+               onclick="openLightbox(this)" data-title="Watercolour Study 16">
+          <figcaption class="caption"><h3>Watercolour Study 16</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/17.webp" loading="lazy" decoding="async" alt="Watercolour Study 17"
+               onclick="openLightbox(this)" data-title="Watercolour Study 17">
+          <figcaption class="caption"><h3>Watercolour Study 17</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/18.webp" loading="lazy" decoding="async" alt="Watercolour Study 18"
+               onclick="openLightbox(this)" data-title="Watercolour Study 18">
+          <figcaption class="caption"><h3>Watercolour Study 18</h3></figcaption>
+        </figure>
+        <figure class="art">
+          <img src="/assets/art/19.webp" loading="lazy" decoding="async" alt="Watercolour Study 19"
+               onclick="openLightbox(this)" data-title="Watercolour Study 19">
+          <figcaption class="caption"><h3>Watercolour Study 19</h3></figcaption>
         </figure>
       </div>
     </div>
@@ -297,24 +353,30 @@
 
   <section id="stories">
     <h2 class="section-title">Stories</h2>
-    <p class="section-lead">Small worlds I build with words.</p>
+    <p class="section-lead">Small moments and memories from my life.</p>
     <div class="stories">
       <article class="story" onclick="toggleStory(this)">
-        <h3>A Letter Brought by the Wind</h3>
-        <p class="excerpt">One autumn morning, I found a nameless letter at my door…</p>
-        <div class="full"><p>Inside the envelope there was a single sentence: &quot;What you are waiting for is actually waiting for you.&quot; That day, I decided to set out on the journey I had postponed for years. Sometimes one sentence is enough to move an entire life.</p></div>
+        <div class="meta">Everyday life in Germany</div><h3>The Neighbour's Renovation</h3>
+        <p class="excerpt">The owner of the house across from us wanted to renew the old front steps. Two days later three workers showed up with a van full…</p>
+        <div class="full"><p>The owner of the house across from us wanted to renew the old front steps. Two days later three workers showed up with a van full of tools and a container for the rubble. First they pulled up the cladding stones. Then they started breaking the concrete underneath with sledgehammers. Of the five steps, after all that hammering they had only managed to break one. Every now and then I'd feel a tremor from where I was sitting. "Is that an earthquake?" I'd wonder, then remember there's no such thing here and relax. My husband started grumbling: "Are you building a bunker against an air raid or something? What is this? It's a five-step entrance staircase. Are they planning to jump off the top? Such German thoroughness." A little later the workers gave up trying to break it by hand. The next day they brought a small tracked breaker. It hammered away all day — TAK TAK TAK — and finished off the remaining four steps. On the third day, in the morning, it broke up the platform left by the door. Then a small excavator and a portable toilet arrived. The excavator loaded the big chunks of concrete from the steps into the container. They fenced off the area around the house. Not a speck of dust escaped. Now they've started digging around the house. I think they're about to do the waterproofing.</p></div>
         <span class="more">Read more →</span>
       </article>
       <article class="story" onclick="toggleStory(this)">
-        <h3>The Quietest Hour of the City</h3>
-        <p class="excerpt">There is a secret known to those who stay awake while everyone sleeps…</p>
-        <div class="full"><p>In those hours past midnight, the city takes off all the masks it wears by day. Walking under the streetlights, for the first time I felt not truly alone, but simply calm.</p></div>
+        <h3>A Writing Class Memory</h3>
+        <p class="excerpt">Last night's session at the ONLINE WRITING HOUSE with YEŞİM CİMCOZ, the last class of the year, went beyond a class. Everything…</p>
+        <div class="full"><p>Last night's session at the ONLINE WRITING HOUSE with YEŞİM CİMCOZ, the last class of the year, went beyond a class. Everything flowed naturally, a little spiritual, gentle, warm, instructive.. My dear Yeşim ❤️</p></div>
         <span class="more">Read more →</span>
       </article>
       <article class="story" onclick="toggleStory(this)">
-        <h3>Two Cups of Coffee</h3>
-        <p class="excerpt">Years later, at the same table, the same two cups…</p>
-        <div class="full"><p>We didn't speak. There was no need to. Some friendships erase the time in between as if it never happened, and pick you up right where you left off. The coffees went cold, but we grew warm.</p></div>
+        <h3>A Choir Concert Memory</h3>
+        <p class="excerpt">Last night was the concert of the choir I've been rehearsing with for a year. Everyone was so happy. It went well. We got long,…</p>
+        <div class="full"><p>Last night was the concert of the choir I've been rehearsing with for a year. Everyone was so happy. It went well. We got long, warm applause. It was a beautiful memory for me.</p></div>
+        <span class="more">Read more →</span>
+      </article>
+      <article class="story" onclick="toggleStory(this)">
+        <h3>The Book is Out</h3>
+        <p class="excerpt">It finally came out today. A dream two years in the making, through the Covid years, has come true.</p>
+        <div class="full"><p>It finally came out today. A dream two years in the making, through the Covid years, has come true.</p></div>
         <span class="more">Read more →</span>
       </article>
     </div>
@@ -325,42 +387,1732 @@
       <h2 class="section-title">Travels</h2>
       <p class="section-lead">Following my steps and my curiosity.</p>
       <div class="travels">
-        <div class="travel">
-          <div class="photo" style="background:linear-gradient(135deg,#12b3a6,#0a6f8a)">✈</div>
-          <div>
-            <div class="place">Cappadocia, Türkiye</div>
-            <h3>Fairy Chimneys and Balloons</h3>
-            <p>Watching dozens of balloons fill the sky at dawn was one of the most serene sights I have ever seen. The thousand-year patience of the stones gives a person a sense of scale.</p>
+        <div class="travel-block">
+          <h3>Hawaii, 2014</h3>
+          <p class="blurb">Hawaii, 2014. A selection of 66 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Hawaii2014/01.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/02.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/03.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/04.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/05.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/06.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/07.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/08.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/09.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/10.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/11.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/12.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/13.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/14.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/15.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/16.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/17.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/18.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/19.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/20.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/21.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/22.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/23.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/24.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/25.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/26.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/27.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/28.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/29.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/30.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/31.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/32.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/33.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/34.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/35.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/36.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/37.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/38.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/39.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/40.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/41.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/42.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/43.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/44.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/45.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/46.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/47.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/48.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/49.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/50.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/51.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/52.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/53.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/54.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/55.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/56.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/57.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/58.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/59.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/60.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/61.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/62.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/63.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/64.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/65.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
+            <img src="/assets/travels/Hawaii2014/66.webp" loading="lazy" decoding="async" alt="Hawaii, 2014"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014">
           </div>
         </div>
-        <div class="travel">
-          <div class="photo" style="background:linear-gradient(135deg,#ffb03d,#ff6a3d)">☀</div>
-          <div>
-            <div class="place">Tuscany, Italy</div>
-            <h3>The Yellow Light on the Hills</h3>
-            <p>The afternoon I lost myself among the olive groves, I understood why so many painters came here. The light flows like paint.</p>
+        <div class="travel-block">
+          <h3>Mallorca, 2008</h3>
+          <p class="blurb">Mallorca, 2008. A selection of 52 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Mallorca2008/01.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/02.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/03.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/04.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/05.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/06.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/07.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/08.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/09.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/10.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/11.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/12.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/13.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/14.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/15.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/16.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/17.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/18.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/19.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/20.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/21.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/22.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/23.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/24.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/25.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/26.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/27.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/28.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/29.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/30.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/31.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/32.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/33.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/34.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/35.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/36.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/37.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/38.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/39.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/40.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/41.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/42.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/43.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/44.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/45.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/46.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/47.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/48.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/49.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/50.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/51.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
+            <img src="/assets/travels/Mallorca2008/52.webp" loading="lazy" decoding="async" alt="Mallorca, 2008"
+             onclick="openLightbox(this)" data-title="Mallorca, 2008">
           </div>
         </div>
-        <div class="travel">
-          <div class="photo" style="background:linear-gradient(135deg,#29c7d6,#0e9e8e)">⛰</div>
-          <div>
-            <div class="place">Lisbon, Portugal</div>
-            <h3>Slopes and Trams</h3>
-            <p>The bell of the yellow trams, tiled walls and squares facing the ocean… Lisbon is a city that knows how to live even its melancholy beautifully.</p>
+        <div class="travel-block">
+          <h3>Lake Constance, September 2010</h3>
+          <p class="blurb">Lake Constance, September 2010. A selection of 32 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/BodenseeEyll20/01.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/02.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/03.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/04.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/05.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/06.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/07.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/08.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/09.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/10.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/11.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/12.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/13.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/14.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/15.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/16.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/17.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/18.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/19.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/20.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/21.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/22.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/23.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/24.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/25.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/26.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/27.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/28.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/29.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/30.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/31.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+            <img src="/assets/travels/BodenseeEyll20/32.webp" loading="lazy" decoding="async" alt="Lake Constance, September 2010"
+             onclick="openLightbox(this)" data-title="Lake Constance, September 2010">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Prague, 2009</h3>
+          <p class="blurb">Prague, 2009. A selection of 38 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Prag2009/01.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/02.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/03.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/04.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/05.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/06.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/07.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/08.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/09.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/10.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/11.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/12.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/13.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/14.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/15.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/16.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/17.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/18.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/19.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/20.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/21.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/22.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/23.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/24.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/25.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/26.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/27.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/28.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/29.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/30.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/31.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/32.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/33.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/34.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/35.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/36.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/37.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+            <img src="/assets/travels/Prag2009/38.webp" loading="lazy" decoding="async" alt="Prague, 2009"
+             onclick="openLightbox(this)" data-title="Prague, 2009">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>From My Memories</h3>
+          <p class="blurb">From My Memories. A selection of 37 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/KronolojikGnde/01.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/02.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/03.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/04.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/05.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/06.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/07.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/08.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/09.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/10.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/11.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/12.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/13.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/14.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/15.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/16.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/17.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/18.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/19.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/20.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/21.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/22.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/23.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/24.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/25.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/26.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/27.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/28.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/29.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/30.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/31.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/32.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/33.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/34.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/35.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/36.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+            <img src="/assets/travels/KronolojikGnde/37.webp" loading="lazy" decoding="async" alt="From My Memories"
+             onclick="openLightbox(this)" data-title="From My Memories">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Photographs</h3>
+          <p class="blurb">Photographs. A selection of 36 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Fotoraflar/01.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/02.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/03.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/04.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/05.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/06.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/07.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/08.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/09.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/10.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/11.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/12.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/13.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/14.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/15.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/16.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/17.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/18.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/19.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/20.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/21.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/22.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/23.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/24.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/25.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/26.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/27.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/28.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/29.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/30.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/31.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/32.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/33.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/34.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/35.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+            <img src="/assets/travels/Fotoraflar/36.webp" loading="lazy" decoding="async" alt="Photographs"
+             onclick="openLightbox(this)" data-title="Photographs">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Rotterdam, May 2011</h3>
+          <p class="blurb">Rotterdam, May 2011. A selection of 27 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/RotterdamMays2/01.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/02.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/03.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/04.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/05.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/06.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/07.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/08.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/09.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/10.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/11.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/12.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/13.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/14.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/15.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/16.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/17.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/18.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/19.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/20.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/21.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/22.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/23.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/24.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/25.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/26.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+            <img src="/assets/travels/RotterdamMays2/27.webp" loading="lazy" decoding="async" alt="Rotterdam, May 2011"
+             onclick="openLightbox(this)" data-title="Rotterdam, May 2011">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>IJsselmeer, August 2011</h3>
+          <p class="blurb">IJsselmeer, August 2011. A selection of 24 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/IJsselmeerAust/01.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/02.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/03.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/04.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/05.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/06.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/07.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/08.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/09.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/10.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/11.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/12.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/13.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/14.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/15.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/16.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/17.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/18.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/19.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/20.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/21.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/22.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/23.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+            <img src="/assets/travels/IJsselmeerAust/24.webp" loading="lazy" decoding="async" alt="IJsselmeer, August 2011"
+             onclick="openLightbox(this)" data-title="IJsselmeer, August 2011">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Kellerwegfest, August 2011</h3>
+          <p class="blurb">Kellerwegfest, August 2011. A selection of 24 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/KellerwegfestA/01.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/02.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/03.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/04.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/05.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/06.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/07.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/08.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/09.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/10.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/11.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/12.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/13.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/14.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/15.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/16.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/17.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/18.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/19.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/20.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/21.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/22.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/23.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+            <img src="/assets/travels/KellerwegfestA/24.webp" loading="lazy" decoding="async" alt="Kellerwegfest, August 2011"
+             onclick="openLightbox(this)" data-title="Kellerwegfest, August 2011">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>New York, 2014</h3>
+          <p class="blurb">New York, 2014. A selection of 22 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/NewYork2014/01.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/02.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/03.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/04.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/05.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/06.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/07.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/08.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/09.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/10.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/11.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/12.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/13.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/14.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/15.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/16.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/17.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/18.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/19.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/20.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/21.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+            <img src="/assets/travels/NewYork2014/22.webp" loading="lazy" decoding="async" alt="New York, 2014"
+             onclick="openLightbox(this)" data-title="New York, 2014">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Akkrum Sailing Weekend, 2008</h3>
+          <p class="blurb">Akkrum Sailing Weekend, 2008. A selection of 20 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/AkkrumYelkenHa/01.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/02.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/03.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/04.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/05.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/06.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/07.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/08.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/09.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/10.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/11.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/12.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/13.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/14.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/15.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/16.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/17.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/18.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/19.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+            <img src="/assets/travels/AkkrumYelkenHa/20.webp" loading="lazy" decoding="async" alt="Akkrum Sailing Weekend, 2008"
+             onclick="openLightbox(this)" data-title="Akkrum Sailing Weekend, 2008">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Eve & Ela, February 2011</h3>
+          <p class="blurb">Eve & Ela, February 2011. A selection of 19 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/EveElaubat2011/01.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/02.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/03.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/04.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/05.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/06.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/07.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/08.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/09.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/10.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/11.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/12.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/13.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/14.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/15.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/16.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/17.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/18.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+            <img src="/assets/travels/EveElaubat2011/19.webp" loading="lazy" decoding="async" alt="Eve & Ela, February 2011"
+             onclick="openLightbox(this)" data-title="Eve & Ela, February 2011">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>San Francisco, 2014</h3>
+          <p class="blurb">San Francisco, 2014. A selection of 14 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/SanFrancisco20/01.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/02.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/03.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/04.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/05.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/06.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/07.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/08.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/09.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/10.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/11.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/12.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/13.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+            <img src="/assets/travels/SanFrancisco20/14.webp" loading="lazy" decoding="async" alt="San Francisco, 2014"
+             onclick="openLightbox(this)" data-title="San Francisco, 2014">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>My Own Memories</h3>
+          <p class="blurb">My Own Memories. A selection of 13 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/ShendanMeng/01.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/02.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/03.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/04.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/05.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/06.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/07.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/08.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/09.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/10.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/11.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/12.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+            <img src="/assets/travels/ShendanMeng/13.webp" loading="lazy" decoding="async" alt="My Own Memories"
+             onclick="openLightbox(this)" data-title="My Own Memories">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Elise & Eylül</h3>
+          <p class="blurb">Elise & Eylül. A selection of 13 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/EliseEyll/01.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/02.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/03.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/04.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/05.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/06.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/07.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/08.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/09.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/10.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/11.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/12.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+            <img src="/assets/travels/EliseEyll/13.webp" loading="lazy" decoding="async" alt="Elise & Eylül"
+             onclick="openLightbox(this)" data-title="Elise & Eylül">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Triberg, Black Forest, 2011</h3>
+          <p class="blurb">Triberg, Black Forest, 2011. A selection of 13 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/TribergSchwarz/01.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/02.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/03.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/04.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/05.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/06.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/07.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/08.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/09.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/10.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/11.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/12.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+            <img src="/assets/travels/TribergSchwarz/13.webp" loading="lazy" decoding="async" alt="Triberg, Black Forest, 2011"
+             onclick="openLightbox(this)" data-title="Triberg, Black Forest, 2011">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Istanbul, December 2010</h3>
+          <p class="blurb">Istanbul, December 2010. A selection of 12 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/stanbulAralk20/01.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/02.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/03.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/04.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/05.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/06.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/07.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/08.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/09.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/10.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/11.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+            <img src="/assets/travels/stanbulAralk20/12.webp" loading="lazy" decoding="async" alt="Istanbul, December 2010"
+             onclick="openLightbox(this)" data-title="Istanbul, December 2010">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Zurich Easter Trip, 2009</h3>
+          <p class="blurb">Zurich Easter Trip, 2009. A selection of 12 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/ZrihPaskalyaGe/01.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/02.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/03.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/04.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/05.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/06.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/07.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/08.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/09.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/10.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/11.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+            <img src="/assets/travels/ZrihPaskalyaGe/12.webp" loading="lazy" decoding="async" alt="Zurich Easter Trip, 2009"
+             onclick="openLightbox(this)" data-title="Zurich Easter Trip, 2009">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Chicago, 2014</h3>
+          <p class="blurb">Chicago, 2014. A selection of 11 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Chicago2014/01.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/02.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/03.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/04.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/05.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/06.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/07.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/08.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/09.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/10.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+            <img src="/assets/travels/Chicago2014/11.webp" loading="lazy" decoding="async" alt="Chicago, 2014"
+             onclick="openLightbox(this)" data-title="Chicago, 2014">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Willingen, December 2008</h3>
+          <p class="blurb">Willingen, December 2008. A selection of 10 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/WillingenAralk/01.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/02.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/03.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/04.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/05.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/06.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/07.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/08.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/09.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+            <img src="/assets/travels/WillingenAralk/10.webp" loading="lazy" decoding="async" alt="Willingen, December 2008"
+             onclick="openLightbox(this)" data-title="Willingen, December 2008">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Türkiye, March 2012</h3>
+          <p class="blurb">Türkiye, March 2012. A selection of 8 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/TrkiyeMart2012/01.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/02.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/03.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/04.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/05.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/06.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/07.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+            <img src="/assets/travels/TrkiyeMart2012/08.webp" loading="lazy" decoding="async" alt="Türkiye, March 2012"
+             onclick="openLightbox(this)" data-title="Türkiye, March 2012">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Wine Tasting</h3>
+          <p class="blurb">Wine Tasting. A selection of 7 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/arapTadm/01.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+            <img src="/assets/travels/arapTadm/02.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+            <img src="/assets/travels/arapTadm/03.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+            <img src="/assets/travels/arapTadm/04.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+            <img src="/assets/travels/arapTadm/05.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+            <img src="/assets/travels/arapTadm/06.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+            <img src="/assets/travels/arapTadm/07.webp" loading="lazy" decoding="async" alt="Wine Tasting"
+             onclick="openLightbox(this)" data-title="Wine Tasting">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Bozburun</h3>
+          <p class="blurb">Bozburun. A selection of 7 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Bozburun/01.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+            <img src="/assets/travels/Bozburun/02.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+            <img src="/assets/travels/Bozburun/03.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+            <img src="/assets/travels/Bozburun/04.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+            <img src="/assets/travels/Bozburun/05.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+            <img src="/assets/travels/Bozburun/06.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+            <img src="/assets/travels/Bozburun/07.webp" loading="lazy" decoding="async" alt="Bozburun"
+             onclick="openLightbox(this)" data-title="Bozburun">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Our New Home, İzmir</h3>
+          <p class="blurb">Our New Home, İzmir. A selection of 6 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/YeniEvimizzmir/01.webp" loading="lazy" decoding="async" alt="Our New Home, İzmir"
+             onclick="openLightbox(this)" data-title="Our New Home, İzmir">
+            <img src="/assets/travels/YeniEvimizzmir/02.webp" loading="lazy" decoding="async" alt="Our New Home, İzmir"
+             onclick="openLightbox(this)" data-title="Our New Home, İzmir">
+            <img src="/assets/travels/YeniEvimizzmir/03.webp" loading="lazy" decoding="async" alt="Our New Home, İzmir"
+             onclick="openLightbox(this)" data-title="Our New Home, İzmir">
+            <img src="/assets/travels/YeniEvimizzmir/04.webp" loading="lazy" decoding="async" alt="Our New Home, İzmir"
+             onclick="openLightbox(this)" data-title="Our New Home, İzmir">
+            <img src="/assets/travels/YeniEvimizzmir/05.webp" loading="lazy" decoding="async" alt="Our New Home, İzmir"
+             onclick="openLightbox(this)" data-title="Our New Home, İzmir">
+            <img src="/assets/travels/YeniEvimizzmir/06.webp" loading="lazy" decoding="async" alt="Our New Home, İzmir"
+             onclick="openLightbox(this)" data-title="Our New Home, İzmir">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Hawaii, 2014 (continued)</h3>
+          <p class="blurb">Hawaii, 2014 (continued). A selection of 6 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Hawaii20142/01.webp" loading="lazy" decoding="async" alt="Hawaii, 2014 (continued)"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014 (continued)">
+            <img src="/assets/travels/Hawaii20142/02.webp" loading="lazy" decoding="async" alt="Hawaii, 2014 (continued)"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014 (continued)">
+            <img src="/assets/travels/Hawaii20142/03.webp" loading="lazy" decoding="async" alt="Hawaii, 2014 (continued)"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014 (continued)">
+            <img src="/assets/travels/Hawaii20142/04.webp" loading="lazy" decoding="async" alt="Hawaii, 2014 (continued)"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014 (continued)">
+            <img src="/assets/travels/Hawaii20142/05.webp" loading="lazy" decoding="async" alt="Hawaii, 2014 (continued)"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014 (continued)">
+            <img src="/assets/travels/Hawaii20142/06.webp" loading="lazy" decoding="async" alt="Hawaii, 2014 (continued)"
+             onclick="openLightbox(this)" data-title="Hawaii, 2014 (continued)">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Christmas Tea</h3>
+          <p class="blurb">Christmas Tea. A selection of 6 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/Noelay/01.webp" loading="lazy" decoding="async" alt="Christmas Tea"
+             onclick="openLightbox(this)" data-title="Christmas Tea">
+            <img src="/assets/travels/Noelay/02.webp" loading="lazy" decoding="async" alt="Christmas Tea"
+             onclick="openLightbox(this)" data-title="Christmas Tea">
+            <img src="/assets/travels/Noelay/03.webp" loading="lazy" decoding="async" alt="Christmas Tea"
+             onclick="openLightbox(this)" data-title="Christmas Tea">
+            <img src="/assets/travels/Noelay/04.webp" loading="lazy" decoding="async" alt="Christmas Tea"
+             onclick="openLightbox(this)" data-title="Christmas Tea">
+            <img src="/assets/travels/Noelay/05.webp" loading="lazy" decoding="async" alt="Christmas Tea"
+             onclick="openLightbox(this)" data-title="Christmas Tea">
+            <img src="/assets/travels/Noelay/06.webp" loading="lazy" decoding="async" alt="Christmas Tea"
+             onclick="openLightbox(this)" data-title="Christmas Tea">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Fulda, April 2012</h3>
+          <p class="blurb">Fulda, April 2012. A selection of 6 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/FuldaNisan2012/01.webp" loading="lazy" decoding="async" alt="Fulda, April 2012"
+             onclick="openLightbox(this)" data-title="Fulda, April 2012">
+            <img src="/assets/travels/FuldaNisan2012/02.webp" loading="lazy" decoding="async" alt="Fulda, April 2012"
+             onclick="openLightbox(this)" data-title="Fulda, April 2012">
+            <img src="/assets/travels/FuldaNisan2012/03.webp" loading="lazy" decoding="async" alt="Fulda, April 2012"
+             onclick="openLightbox(this)" data-title="Fulda, April 2012">
+            <img src="/assets/travels/FuldaNisan2012/04.webp" loading="lazy" decoding="async" alt="Fulda, April 2012"
+             onclick="openLightbox(this)" data-title="Fulda, April 2012">
+            <img src="/assets/travels/FuldaNisan2012/05.webp" loading="lazy" decoding="async" alt="Fulda, April 2012"
+             onclick="openLightbox(this)" data-title="Fulda, April 2012">
+            <img src="/assets/travels/FuldaNisan2012/06.webp" loading="lazy" decoding="async" alt="Fulda, April 2012"
+             onclick="openLightbox(this)" data-title="Fulda, April 2012">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Eftymia's Birthday</h3>
+          <p class="blurb">Eftymia's Birthday. A selection of 5 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/EftymiannDoumG/01.webp" loading="lazy" decoding="async" alt="Eftymia's Birthday"
+             onclick="openLightbox(this)" data-title="Eftymia's Birthday">
+            <img src="/assets/travels/EftymiannDoumG/02.webp" loading="lazy" decoding="async" alt="Eftymia's Birthday"
+             onclick="openLightbox(this)" data-title="Eftymia's Birthday">
+            <img src="/assets/travels/EftymiannDoumG/03.webp" loading="lazy" decoding="async" alt="Eftymia's Birthday"
+             onclick="openLightbox(this)" data-title="Eftymia's Birthday">
+            <img src="/assets/travels/EftymiannDoumG/04.webp" loading="lazy" decoding="async" alt="Eftymia's Birthday"
+             onclick="openLightbox(this)" data-title="Eftymia's Birthday">
+            <img src="/assets/travels/EftymiannDoumG/05.webp" loading="lazy" decoding="async" alt="Eftymia's Birthday"
+             onclick="openLightbox(this)" data-title="Eftymia's Birthday">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>My Instagram Backup</h3>
+          <p class="blurb">My Instagram Backup. A selection of 4 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/InstagramFotor/01.webp" loading="lazy" decoding="async" alt="My Instagram Backup"
+             onclick="openLightbox(this)" data-title="My Instagram Backup">
+            <img src="/assets/travels/InstagramFotor/02.webp" loading="lazy" decoding="async" alt="My Instagram Backup"
+             onclick="openLightbox(this)" data-title="My Instagram Backup">
+            <img src="/assets/travels/InstagramFotor/03.webp" loading="lazy" decoding="async" alt="My Instagram Backup"
+             onclick="openLightbox(this)" data-title="My Instagram Backup">
+            <img src="/assets/travels/InstagramFotor/04.webp" loading="lazy" decoding="async" alt="My Instagram Backup"
+             onclick="openLightbox(this)" data-title="My Instagram Backup">
+          </div>
+        </div>
+        <div class="travel-block">
+          <h3>Frankfurt, April</h3>
+          <p class="blurb">Frankfurt, April. A selection of 4 photos.</p>
+          <div class="photo-grid">
+            <img src="/assets/travels/FrankfurtNisan/01.webp" loading="lazy" decoding="async" alt="Frankfurt, April"
+             onclick="openLightbox(this)" data-title="Frankfurt, April">
+            <img src="/assets/travels/FrankfurtNisan/02.webp" loading="lazy" decoding="async" alt="Frankfurt, April"
+             onclick="openLightbox(this)" data-title="Frankfurt, April">
+            <img src="/assets/travels/FrankfurtNisan/03.webp" loading="lazy" decoding="async" alt="Frankfurt, April"
+             onclick="openLightbox(this)" data-title="Frankfurt, April">
+            <img src="/assets/travels/FrankfurtNisan/04.webp" loading="lazy" decoding="async" alt="Frankfurt, April"
+             onclick="openLightbox(this)" data-title="Frankfurt, April">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="thoughts">
-    <h2 class="section-title">Thoughts</h2>
-    <p class="section-lead">Questions about life that I keep pondering.</p>
-    <div class="thoughts">
-      <div class="thought"><p>Perhaps happiness is not a destination, but a small habit hidden inside every moment we truly pay attention to.</p></div>
-      <div class="thought"><p>It is not the painter who finishes a painting, but the eye that beholds it. The same is true of life: we are the ones who give it meaning.</p></div>
-      <div class="thought"><p>Travel does not change the place we go to; it changes the way we look once we return.</p></div>
-      <div class="thought"><p>Silence is not emptiness; it is often the only place where we can hear our loudest thoughts.</p></div>
+  <section id="moments">
+    <h2 class="section-title">Moments</h2>
+    <p class="section-lead">Short shots from my Instagram.</p>
+    <div class="gallery-grid">
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/01.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/02.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/03.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">The weather was rough yesterday. The harbour filled with boats fleeing the storm. It's rare for this season. 🥰</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/04.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/05.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/06.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/07.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/08.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/09.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/10.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Last night was the concert of the choir I've rehearsed with for a year. It went well, long applause — a lovely memory.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/11.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/12.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/13.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Karsimizdaki evin eski dış merdivenlerini yenilemek istiyormus sahibi. Iki gun önce üç işçi ,aletleri tasiyan kamyonet ve bir de çıkan molozu koyacakları konteynerle gelip işe başladılar. Önce kaplama taslarini çıkardılar. Sonra balyozlarla basladilar alttaki betonu kirmaya. Hepsi BEŞ basamak olan merdivenlerin vur Allah vur sadece bir basamagini kirabildiler. Arada oturdugum yerden bir titresim duyuyorum. Deprem mi? diyorum. Sonra burada deprem olmadigini hatirlayip rahatliyorum. Kocam söylenmeye basladi. ''Ulan bonbardimana karşı bunker mi yapiyorsunuz? Ne bu be? Hepi topu 5 basamakli ev giris merdiveni. Ordu ustune cikip da ziplayacak mi? Alman abartisi iste'' diye. Biraz sonra adamlar kiramayinca işi
+ birakti. Ertesi gün  paletli küçük bir kırıcı getirdiler. TAKA TAKA TAKA bütün gün calisti. Kalan dört basamağı kırdı. 3.gun  sabah kapinin onunde kalan platformu kırdı. Arkadan bir küçük kepçe ve seyyar tuvalet geldi. Merdivenden cikan buyuk beton parcalarini konteynere doldurdu. Evin etrafini seperatorle kapattilar. Etrafa bir tek toz toprak sacilmadi. Simdi evin etrafini kazmaya basladilar. Galiba izolasyon yapilacak.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/14.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/15.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Today we finally climbed up to Kastabos, the ancient city we'd wanted to see for years. 14,000 steps, half of it a climb. So grateful.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/16.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/17.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Wishing everyone health, joy and abundance; freedom, prosperity and justice for our country; peace for the world, and sensible politicians.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/18.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">These kids are diamonds!</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/19.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">My friend Mufide Gönenç's daughter Müge and grandchild Pera have passed away. In loving memory.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/20.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/21.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/22.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/23.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">"Evening, evening again, evening again. If only I were a reed on the lake now." — A. Haşim</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/24.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/25.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/26.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/27.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">The Rhein is busy today.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/28.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/29.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Last night's session at the online writing house with Yeşim Cimcoz, the year's last class, went beyond a class. ❤️</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/30.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Watching the day set from the balcony.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/31.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/32.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/33.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/34.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Acmak icinbeni beklemişler☺️</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/35.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/36.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/37.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/38.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/39.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/40.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/41.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/42.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Kalbim orada kaldi. Orada da doğmuş olabilirdim. Coğrafya kaderdir.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/43.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/44.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/45.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/46.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Bugun liman kalabalik.Yine yazdan kalma bir gün.  Gelecek iki gün hic rüzgar yok. Gümrükten çıkış izni almak icin gelmis sanirim.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/47.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Bugün Städel Museum da,  Monet sergisinde gördüklerim beni Monet'den daha çok etkiledi. Yerde resim çizen çocuk mankenmiş meğer. Herkesin gerçeği anlamasi biraz zaman aliyordu.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/48.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/49.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/50.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/51.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/52.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/53.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/54.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/55.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/56.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/57.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Bu da eski.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/58.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/59.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Eski</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/60.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/61.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/62.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Hesabım hacklenince tekrar eski resimleri  koyuyorum.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/63.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/64.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/65.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Çok iyi bir yazar. Kitaba bayildim. Yaşar Kemal in Ruhu kaçmış içine.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/66.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">BAHÇEDEN😊</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/67.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Simdilik Yakin Kitapevi ve yakinkitapevi.com.tr den temin ediliyor.  Bir hafta içinde de D&R, PANDORA, KIRMIZI KEDI, KITAP SEÇ,  BKM de satışa çıkıyor.  Kendi kitapcinizdan ister iseniz  getirtiyorlar.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/68.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Nihayet bugün çıktı. Covit günlerinde iki yıllık emekle hayalim  gerçekleşti.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/69.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">As of now September sunset in Izmir.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/70.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Geçen yıl çekmişim. Symi'de insan halleri.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/71.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">We have to do this again!</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/72.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Bekliyorum.🌸</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/73.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Frankfurt'u özleyeceğimi asla düşünmezdim!</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/74.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Truva'yı görmek lazım. Özellikle ödül alan müze binasını.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/75.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Güzel bir gün oldu.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/76.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/77.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/78.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/79.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">BU GECE ARAMIZDA BİRİ KURT ADAM OLACAK! 😳BOZBURUN 7.00</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/80.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Bugün bu Yaşlı denizci bu tekneyle İngiltere'dan Bozburun limanina geldi.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/81.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Saygi sevgi ve minnetle anıyoruz.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/82.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Dün gece açmış. Bu yıl ilk kez.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/83.webp" loading="lazy" decoding="async" alt=""
+               data-title="">
+          <div class="cap">Tekneler döndü. Karaya çekilmeye basladi. Isler bitince düğünler baslar. Kazanilan paralar harcanir. Ozlemler giderilir.Zeytin agaci olanlari yogun bir ay bekler. Zeytin toplanacak. Sıkıma yollanacak.  Kis gunlerinde es dost ziyaretleri, aile toplantilari gece ev gezmelerine  gidilecek. Yeni tekne inşaa edenler bu kis çok calisacak. Gelecek yaza yeni tekne hazir olacak. Masraf cok. Sonra ayni seyler tekrar edecek.</div>
+        </figure>
+    </div>
+  </section>
+
+  <section id="thoughts" class="alt">
+    <div class="inner">
+      <h2 class="section-title">Thoughts</h2>
+      <p class="section-lead">Questions about life that I keep pondering.</p>
+      <div class="thoughts">
+      <div class="thought"><p>The weather was rough yesterday. The harbour filled with boats fleeing the storm. Early in the morning the wind was from the EAST. Now it has turned NORTH. Rare for this season. The colour of the sea changes with the wind too. Now it has turned indigo. 🥰</p></div>
+      <div class="thought"><p>What I saw today at the Monet exhibition at the Städel Museum moved me more than Monet himself. It turned out the child drawing on the floor was a live model. It took everyone a moment to realise what was real.</p></div>
+      <div class="thought"><p>My heart stayed there. I could have been born there too. Geography is destiny.</p></div>
+      <div class="thought"><p>When I feel low, art lifts me back up. I don't know how I'd live without it!</p></div>
+      <div class="thought"><p>The sun is gone. The light has changed. The air turned cold. I froze. My place is narrow. The rest is for tomorrow.</p></div>
+      </div>
     </div>
   </section>
 
@@ -378,7 +2130,7 @@
   <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
     <button class="close" onclick="closeLightbox(event)">&times;</button>
     <div class="box">
-      <div class="lb-img" id="lbImg"></div>
+      <img class="lb-img" id="lbImg" src="" alt="">
       <div class="lb-cap">
         <h3 id="lbTitle"></h3>
         <span id="lbMedium"></span>
@@ -388,13 +2140,11 @@
 
   <script>
     function toggleStory(el) { el.classList.toggle("open"); }
-    function openLightbox(fig) {
-      var thumb = fig.querySelector(".thumb");
+    function openLightbox(imgEl) {
       var lbImg = document.getElementById("lbImg");
-      lbImg.style.background = thumb.style.background;
-      lbImg.textContent = thumb.textContent;
-      document.getElementById("lbTitle").textContent = fig.dataset.title;
-      document.getElementById("lbMedium").textContent = fig.dataset.medium;
+      lbImg.src = imgEl.currentSrc || imgEl.src;
+      document.getElementById("lbTitle").textContent = imgEl.dataset.title || "";
+      document.getElementById("lbMedium").textContent = imgEl.dataset.sub || "";
       document.getElementById("lightbox").classList.add("show");
     }
     function closeLightbox(e) {
