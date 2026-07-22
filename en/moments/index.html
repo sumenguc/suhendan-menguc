@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moments — Sühendan Mengüç</title>
+  <meta name="description" content="Short shots and quick notes from Sühendan Mengüç's Instagram.">
+  <link rel="canonical" href="https://suhendanmenguc.com/en/moments/">
+  <link rel="alternate" hreflang="tr" href="https://suhendanmenguc.com/anlar/">
+  <link rel="alternate" hreflang="en" href="https://suhendanmenguc.com/en/moments/">
+  <link rel="alternate" hreflang="de" href="https://suhendanmenguc.com/de/momente/">
+  <link rel="alternate" hreflang="x-default" href="https://suhendanmenguc.com/anlar/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sühendan Mengüç">
+  <meta property="og:title" content="Moments — Sühendan Mengüç">
+  <meta property="og:description" content="Short shots and quick notes from Sühendan Mengüç's Instagram.">
+  <meta property="og:url" content="https://suhendanmenguc.com/en/moments/">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Moments — Sühendan Mengüç">
+  <meta name="twitter:description" content="Short shots and quick notes from Sühendan Mengüç's Instagram.">
+
+  <style>
+    :root {
+      --cream: #f2fbf7;
+      --cream-2: #d3f3ea;
+      --terracotta: #ff5a5f;
+      --brown: #0e9e8e;
+      --ink: #0c3b34;
+      --muted: #4a726a;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: -apple-system, "Segoe UI", Roboto, Helvetica, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body {
+      font-family: var(--sans); background: var(--cream);
+      color: var(--ink); line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.25; }
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 0.5rem 1rem; padding: 0.9rem 2rem;
+      background: rgba(242, 251, 247, 0.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--cream-2);
+    }
+    .brand {
+      font-family: var(--serif); font-size: 1.25rem; letter-spacing: 0.5px;
+      color: var(--ink); white-space: nowrap; text-decoration: none;
+    }
+    nav { display: flex; align-items: center; flex-wrap: wrap; gap: 0.3rem 1.1rem; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+    nav a:hover { color: var(--terracotta); }
+    .langs { display: flex; gap: 0.35rem; margin-left: 0.5rem; }
+    .lang-btn {
+      display: inline-block; text-decoration: none; background: transparent;
+      color: var(--muted); border: 1px solid #a9d9cd; padding: 0.25rem 0.6rem;
+      border-radius: 6px; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.5px; transition: all 0.2s;
+    }
+    .lang-btn:hover { border-color: var(--terracotta); color: var(--terracotta); }
+    .lang-btn[aria-current="true"] {
+      background: var(--terracotta); border-color: var(--terracotta); color: #fff;
+    }
+    section { max-width: 1080px; margin: 0 auto; padding: 5rem 2rem; }
+    .section-title { font-size: 2rem; color: var(--brown); margin-bottom: 0.4rem; }
+    .section-lead {
+      color: var(--muted); font-style: italic; margin-bottom: 2.5rem; max-width: 640px;
+    }
+    .hero {
+      max-width: none; min-height: 92vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      padding-top: 6rem;
+      background:
+        radial-gradient(circle at 25% 18%, rgba(255, 90, 95, 0.16), transparent 55%),
+        radial-gradient(circle at 78% 30%, rgba(255, 193, 61, 0.20), transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(14, 158, 142, 0.20), transparent 55%),
+        var(--cream);
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 4.6rem); color: var(--ink); margin-bottom: 0.8rem;
+    }
+    .hero .roles {
+      font-family: var(--serif); font-style: italic;
+      font-size: clamp(1.1rem, 2.2vw, 1.5rem); color: #7d2ecc;
+      letter-spacing: 1px; margin-bottom: 1.5rem;
+    }
+    .hero p { max-width: 560px; color: var(--muted); margin-bottom: 2.2rem; }
+    .hero-cta {
+      display: inline-block; background: var(--terracotta); color: #fff;
+      text-decoration: none; padding: 0.85rem 2rem; border-radius: 50px;
+      font-weight: 600; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(255, 90, 95, 0.3); }
+    .hero-cta.alt { background: transparent; border: 2px solid var(--terracotta); color: var(--terracotta); padding: calc(0.85rem - 2px) calc(2rem - 2px); }
+    #about { display: grid; grid-template-columns: 260px 1fr; gap: 3rem; align-items: center; }
+    .portrait {
+      aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden;
+      background: linear-gradient(135deg, #6fe0cb, #0e9e8e);
+      display: flex; align-items: center; justify-content: center; color: #fff;
+      font-style: italic; text-align: center; padding: 1rem;
+      box-shadow: 0 14px 30px rgba(12, 59, 52, 0.18);
+    }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .about-text h2 { margin-bottom: 1rem; }
+    .about-text p + p { margin-top: 1rem; }
+    .alt { background: var(--cream-2); max-width: none; }
+    .alt > .inner { max-width: 1080px; margin: 0 auto; }
+    #book { display: grid; grid-template-columns: 240px 1fr; gap: 2.5rem; align-items: start; }
+    #book .book-cover { width: 100%; border-radius: 8px; box-shadow: 0 14px 30px rgba(12, 59, 52, 0.18); display: block; }
+    #book .book-text h2 { margin-bottom: 0.3rem; }
+    #book .book-text h3 { font-size: 1.8rem; color: var(--ink); margin: 0.4rem 0 0.1rem; }
+    #book .book-subtitle { font-style: italic; color: var(--terracotta); margin-bottom: 0.5rem; }
+    #book .book-meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.1rem; }
+    #book .book-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.2rem;
+    }
+    .art {
+      background: var(--cream); border-radius: 10px; overflow: hidden;
+      box-shadow: 0 8px 20px rgba(12, 59, 52, 0.08); cursor: pointer;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .art:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(12, 59, 52, 0.16); }
+    .art img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+    .art .caption { padding: 0.7rem 0.9rem 0.9rem; }
+    .art .caption h3 { font-size: 1rem; margin-bottom: 0.1rem; }
+    .art .caption span { font-size: 0.8rem; color: var(--muted); }
+    .stories { display: flex; flex-direction: column; gap: 1.2rem; }
+    .story {
+      background: var(--cream); border: 1px solid var(--cream-2);
+      border-left: 4px solid var(--terracotta); border-radius: 8px;
+      padding: 1.4rem 1.6rem; cursor: pointer; transition: box-shadow 0.2s;
+    }
+    .story:hover { box-shadow: 0 10px 24px rgba(12, 59, 52, 0.1); }
+    .story .meta {
+      font-size: 0.78rem; letter-spacing: 0.5px; text-transform: uppercase;
+      color: var(--terracotta); margin-bottom: 0.2rem;
+    }
+    .story h3 { font-size: 1.25rem; margin-bottom: 0.3rem; }
+    .story .excerpt { color: var(--muted); }
+    .story .full { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .story.open .full { max-height: 2000px; }
+    .story .full p { margin-top: 1rem; white-space: pre-line; }
+    .story .more {
+      display: inline-block; margin-top: 0.8rem; color: var(--terracotta);
+      font-size: 0.85rem; font-weight: 600;
+    }
+    .page-hero {
+      max-width: 1080px; margin: 0 auto; padding: 8rem 2rem 1rem;
+    }
+    .page-hero h1 { font-size: clamp(2.2rem, 5vw, 3rem); color: var(--brown); margin-bottom: 0.5rem; }
+    .back-link {
+      display: inline-block; margin-top: 1rem; color: var(--terracotta);
+      text-decoration: none; font-size: 0.9rem; font-weight: 600;
+    }
+    .teaser-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.8rem; margin-bottom: 1.6rem;
+    }
+    .teaser-grid a { display: block; border-radius: 8px; overflow: hidden; text-decoration: none; position: relative; }
+    .teaser-grid img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; transition: transform 0.25s; }
+    .teaser-grid a:hover img { transform: scale(1.06); }
+    .travels { display: flex; flex-direction: column; gap: 1.2rem; }
+    .travel-block {
+      background: var(--cream); border-radius: 12px; padding: 0;
+      box-shadow: 0 8px 20px rgba(12, 59, 52, 0.07); overflow: hidden;
+    }
+    .travel-block summary {
+      cursor: pointer; font-family: var(--serif); font-size: 1.3rem; color: var(--ink);
+      padding: 1.2rem 1.5rem; list-style: none; display: flex; align-items: baseline; gap: 0.6rem;
+    }
+    .travel-block summary::-webkit-details-marker { display: none; }
+    .travel-block summary::before { content: "▸"; color: var(--terracotta); font-size: 1rem; }
+    .travel-block[open] summary::before { content: "▾"; }
+    .travel-block summary .count { font-family: var(--sans); font-size: 0.82rem; color: var(--muted); font-weight: 400; }
+    .travel-block .body { padding: 0 1.5rem 1.6rem; }
+    .travel-block .blurb { color: var(--muted); font-style: italic; margin-bottom: 1rem; font-size: 0.92rem; }
+    .photo-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.6rem;
+    }
+    .photo-grid img {
+      width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px;
+      cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; display: block;
+    }
+    .photo-grid img:hover { transform: scale(1.04); box-shadow: 0 6px 16px rgba(12, 59, 52, 0.2); }
+    .moment { background: var(--cream); border-radius: 10px; overflow: hidden;
+      box-shadow: 0 6px 16px rgba(12, 59, 52, 0.07); cursor: pointer; transition: transform 0.2s; }
+    .moment:hover { transform: translateY(-3px); }
+    .moment img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+    .moment .cap { padding: 0.5rem 0.7rem 0.7rem; font-size: 0.78rem; color: var(--muted); }
+    .thoughts {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;
+    }
+    .thought {
+      background: var(--cream); border-radius: 10px; padding: 2rem 1.8rem;
+      box-shadow: 0 8px 20px rgba(12, 59, 52, 0.07); position: relative;
+    }
+    .thought::before {
+      content: "\201C"; font-family: var(--serif); font-size: 4rem;
+      color: rgba(255, 90, 95, 0.28); position: absolute; top: 0.2rem; left: 1rem; line-height: 1;
+    }
+    .thought p {
+      font-family: var(--serif); font-size: 1.08rem; font-style: italic;
+      color: var(--ink); margin-top: 1rem;
+    }
+    footer { background: var(--ink); color: #b9d6ce; text-align: center; padding: 2.5rem 2rem; }
+    footer .fname { font-family: var(--serif); font-size: 1.3rem; color: var(--cream); margin-bottom: 0.5rem; }
+    footer .links { margin: 0.8rem 0 1rem; display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+    footer .links a { color: #b9d6ce; text-decoration: none; font-size: 0.9rem; border-bottom: 1px dotted #4a726a; }
+    footer .links a:hover { color: #fff; }
+    footer small { color: #7fa79d; font-size: 0.8rem; }
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(12, 59, 52, 0.92); align-items: center; justify-content: center; padding: 2rem;
+    }
+    .lightbox.show { display: flex; }
+    .lightbox .box { max-width: 720px; width: 100%; background: var(--cream); border-radius: 12px; overflow: hidden; }
+    .lightbox .lb-img { width: 100%; max-height: 72vh; object-fit: contain; display: block; background: #05201b; }
+    .lightbox .lb-cap { padding: 1rem 1.4rem 1.4rem; }
+    .lightbox .lb-cap h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+    .lightbox .lb-cap span { color: var(--muted); font-size: 0.9rem; }
+    .lightbox .close {
+      position: absolute; top: 1.5rem; right: 2rem; color: #fff; font-size: 2.2rem;
+      cursor: pointer; line-height: 1; background: none; border: none;
+    }
+    @media (max-width: 760px) {
+      section, .page-hero { padding: 3.5rem 1.4rem; }
+      .page-hero { padding-top: 7rem; }
+      #about, #book { grid-template-columns: 1fr; }
+      .portrait { max-width: 260px; margin: 0 auto; }
+      #book .book-cover { max-width: 220px; margin: 0 auto; }
+      header { padding: 0.8rem 1.2rem; }
+      nav { gap: 0.2rem 0.8rem; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T1Y2555HS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5T1Y2555HS');
+  </script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/en/">Sühendan Mengüç</a>
+    <nav>
+      <a href="/en/#about">About</a>
+      <a href="/en/#book">My Book</a>
+      <a href="/en/#paintings">Paintings</a>
+      <a href="/en/#stories">Stories</a>
+      <a href="/en/travels/">Travels</a>
+      <a href="/en/moments/">Moments</a>
+      <a href="/en/#thoughts">Thoughts</a>
+      <span class="langs">
+        <a class="lang-btn" href="/anlar/" hreflang="tr">TR</a>
+        <a class="lang-btn" href="/en/moments/" hreflang="en" aria-current="true">EN</a>
+        <a class="lang-btn" href="/de/momente/" hreflang="de">DE</a>
+      </span>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Moments</h1>
+    <p class="section-lead">Short shots and quick notes from my Instagram.</p>
+    <a href="/en/#about" class="back-link">← Back to home</a>
+  </section>
+  <section>
+    <div class="gallery-grid">
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/01.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/02.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/03.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">The weather was rough yesterday. The harbour filled with boats fleeing the storm. It's rare for this season. 🥰</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/04.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/05.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/06.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/07.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/08.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/09.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/10.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Last night was the concert of the choir I've rehearsed with for a year. It went well, long applause — a lovely memory.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/11.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/12.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/13.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Karsimizdaki evin eski dış merdivenlerini yenilemek istiyormus sahibi. Iki gun önce üç işçi ,aletleri tasiyan kamyonet ve bir de çıkan molozu koyacakları konteynerle gelip işe başladılar. Önce kaplama taslarini çıkardılar. Sonra balyozlarla basladilar alttaki betonu kirmaya. Hepsi BEŞ basamak olan merdivenlerin vur Allah vur sadece bir basamagini kirabildiler. Arada oturdugum yerden bir titresim duyuyorum. Deprem mi? diyorum. Sonra burada deprem olmadigini hatirlayip rahatliyorum. Kocam söylenmeye basladi. ''Ulan bonbardimana karşı bunker mi yapiyorsunuz? Ne bu be? Hepi topu 5 basamakli ev giris merdiveni. Ordu ustune cikip da ziplayacak mi? Alman abartisi iste'' diye. Biraz sonra adamlar kiramayinca işi
+ birakti. Ertesi gün  paletli küçük bir kırıcı getirdiler. TAKA TAKA TAKA bütün gün calisti. Kalan dört basamağı kırdı. 3.gun  sabah kapinin onunde kalan platformu kırdı. Arkadan bir küçük kepçe ve seyyar tuvalet geldi. Merdivenden cikan buyuk beton parcalarini konteynere doldurdu. Evin etrafini seperatorle kapattilar. Etrafa bir tek toz toprak sacilmadi. Simdi evin etrafini kazmaya basladilar. Galiba izolasyon yapilacak.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/14.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/15.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Today we finally climbed up to Kastabos, the ancient city we'd wanted to see for years. 14,000 steps, half of it a climb. So grateful.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/16.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/17.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Wishing everyone health, joy and abundance; freedom, prosperity and justice for our country; peace for the world, and sensible politicians.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/18.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">These kids are diamonds!</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/19.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">My friend Mufide Gönenç's daughter Müge and grandchild Pera have passed away. In loving memory.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/20.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/21.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/22.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/23.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">"Evening, evening again, evening again. If only I were a reed on the lake now." — A. Haşim</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/24.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/25.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/26.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/27.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">The Rhein is busy today.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/28.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/29.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Last night's session at the online writing house with Yeşim Cimcoz, the year's last class, went beyond a class. ❤️</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/30.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Watching the day set from the balcony.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/31.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/32.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/33.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/34.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Acmak icinbeni beklemişler☺️</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/35.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/36.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/37.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/38.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/39.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/40.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/41.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/42.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Kalbim orada kaldi. Orada da doğmuş olabilirdim. Coğrafya kaderdir.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/43.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/44.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/45.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/46.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Bugun liman kalabalik.Yine yazdan kalma bir gün.  Gelecek iki gün hic rüzgar yok. Gümrükten çıkış izni almak icin gelmis sanirim.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/47.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Bugün Städel Museum da,  Monet sergisinde gördüklerim beni Monet'den daha çok etkiledi. Yerde resim çizen çocuk mankenmiş meğer. Herkesin gerçeği anlamasi biraz zaman aliyordu.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/48.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/49.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/50.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/51.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/52.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/53.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/54.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/55.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/56.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/57.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Bu da eski.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/58.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/59.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Eski</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/60.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/61.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/62.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Hesabım hacklenince tekrar eski resimleri  koyuyorum.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/63.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/64.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/65.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Çok iyi bir yazar. Kitaba bayildim. Yaşar Kemal in Ruhu kaçmış içine.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/66.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">BAHÇEDEN😊</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/67.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Simdilik Yakin Kitapevi ve yakinkitapevi.com.tr den temin ediliyor.  Bir hafta içinde de D&R, PANDORA, KIRMIZI KEDI, KITAP SEÇ,  BKM de satışa çıkıyor.  Kendi kitapcinizdan ister iseniz  getirtiyorlar.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/68.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Nihayet bugün çıktı. Covit günlerinde iki yıllık emekle hayalim  gerçekleşti.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/69.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">As of now September sunset in Izmir.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/70.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Geçen yıl çekmişim. Symi'de insan halleri.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/71.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">We have to do this again!</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/72.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Bekliyorum.🌸</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/73.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Frankfurt'u özleyeceğimi asla düşünmezdim!</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/74.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Truva'yı görmek lazım. Özellikle ödül alan müze binasını.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/75.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Güzel bir gün oldu.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/76.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/77.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/78.webp" loading="lazy" decoding="async" alt="" data-title="">
+          
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/79.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">BU GECE ARAMIZDA BİRİ KURT ADAM OLACAK! 😳BOZBURUN 7.00</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/80.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Bugün bu Yaşlı denizci bu tekneyle İngiltere'dan Bozburun limanina geldi.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/81.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Saygi sevgi ve minnetle anıyoruz.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/82.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Dün gece açmış. Bu yıl ilk kez.</div>
+        </figure>
+        <figure class="moment" onclick="openLightbox(this.querySelector('img'))">
+          <img src="/assets/instagram/83.webp" loading="lazy" decoding="async" alt="" data-title="">
+          <div class="cap">Tekneler döndü. Karaya çekilmeye basladi. Isler bitince düğünler baslar. Kazanilan paralar harcanir. Ozlemler giderilir.Zeytin agaci olanlari yogun bir ay bekler. Zeytin toplanacak. Sıkıma yollanacak.  Kis gunlerinde es dost ziyaretleri, aile toplantilari gece ev gezmelerine  gidilecek. Yeni tekne inşaa edenler bu kis çok calisacak. Gelecek yaza yeni tekne hazir olacak. Masraf cok. Sonra ayni seyler tekrar edecek.</div>
+        </figure>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fname">Sühendan Mengüç</div>
+    <div>Painter · Writer · Traveler</div>
+    <div class="links">
+      <a href="#">Contact</a>
+      <a href="#">Instagram</a>
+      <a href="#">Email</a>
+    </div>
+    <small>© 2026 Sühendan Mengüç · All rights reserved.</small>
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="close" onclick="closeLightbox(event)">&times;</button>
+    <div class="box">
+      <img class="lb-img" id="lbImg" src="" alt="">
+      <div class="lb-cap">
+        <h3 id="lbTitle"></h3>
+        <span id="lbMedium"></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleStory(el) { el.classList.toggle("open"); }
+    function openLightbox(imgEl) {
+      var lbImg = document.getElementById("lbImg");
+      lbImg.src = imgEl.currentSrc || imgEl.src;
+      document.getElementById("lbTitle").textContent = imgEl.dataset.title || "";
+      document.getElementById("lbMedium").textContent = imgEl.dataset.sub || "";
+      document.getElementById("lightbox").classList.add("show");
+    }
+    function closeLightbox(e) {
+      if (e.target.id === "lightbox" || e.target.classList.contains("close")) {
+        document.getElementById("lightbox").classList.remove("show");
+      }
+    }
+  </script>
+</body>
+</html>
