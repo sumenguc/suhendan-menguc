@@ -498,6 +498,15 @@ def build_page(lang):
   <meta name="twitter:description" content="%s">
 %s
   <style>%s  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T1Y2555HS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5T1Y2555HS');
+  </script>
 </head>
 <body>
   <header>
